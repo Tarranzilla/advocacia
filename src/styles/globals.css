@@ -373,6 +373,11 @@ body {
     gap: var(--medium-gap);
 }
 
+.Footer_Btn > * {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 800px) {
