@@ -1,36 +1,15 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
-import Link from "next/link";
+
+import Intro from "@/components/Intro";
+import Navbar from "@/components/Navbar";
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
-            <div className="Navbar">
-                <div className="Navbar_Content">
-                    <h1>Stresser & Machado</h1>
-
-                    <div className="Navbar_Links Desktop_Only">
-                        <Link className="Navbar_Link" href="/#">
-                            Início
-                        </Link>
-                        <Link className="Navbar_Link" href="/#about_us">
-                            Quem Somos
-                        </Link>
-                        <Link className="Navbar_Link" href="/#expertise">
-                            Áreas de Atuação
-                        </Link>
-                        <Link className="Navbar_Link" href="/#contact">
-                            Contato
-                        </Link>
-                    </div>
-
-                    <div className="Menu_Container Mobile_Only">
-                        <span className="material-icons">menu_book</span>
-                    </div>
-                </div>
-            </div>
-
+            <Intro />
+            <Navbar />
             <AnimatePresence mode="wait">
                 <Component {...pageProps} />
             </AnimatePresence>
