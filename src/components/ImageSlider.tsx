@@ -1,0 +1,82 @@
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { Image_List } from "@/content_lists/banner_image_list";
+import { motion as m, AnimatePresence } from "framer-motion";
+
+type ImageSliderProps = {
+    content: Image_List[];
+};
+
+export default function ImageSlider({ content }: ImageSliderProps) {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [isPlaying, setIsPlaying] = useState(true);
+
+    const nextSlide = () => {
+        setActiveIndex((current) => (current + 1) % content.length);
+    };
+
+    const prevSlide = () => {
+        setActiveIndex((current) => (current === 0 ? content.length - 1 : current - 1));
+    };
+
+    const togglePlay = () => {
+        setIsPlaying(!isPlaying);
+    };
+
+    // Change slide every 5 seconds
+    useEffect(() => {
+        let interval: NodeJS.Timeout;
+        if (isPlaying) {
+            interval = setInterval(() => {
+                setActiveIndex((current) => (current + 1) % content.length);
+            }, 5000);
+        }
+        return () => clearInterval(interval);
+    }, [content, isPlaying]);
+
+    return (
+        <div className="ImageSlider">
+            <button className="ImageSlider_Btn ImageSlider_Previous_Btn" onClick={prevSlide}>
+                <span className="material-icons">arrow_back_ios</span>
+            </button>
+
+            <AnimatePresence mode="wait">
+                {content.map((contentItem, index) => {
+                    if (index === activeIndex) {
+                        return (
+                            <m.div
+                                key={contentItem.key}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.5 }}
+                                className="ImageSlide"
+                            >
+                                <Image
+                                    src={contentItem.imgSrc}
+                                    alt={contentItem.title}
+                                    width={contentItem.size.width}
+                                    height={contentItem.size.height}
+                                />
+                            </m.div>
+                        );
+                    }
+                })}
+            </AnimatePresence>
+
+            <button className="ImageSlider_Btn ImageSlider_Next_Btn" onClick={nextSlide}>
+                <span className="material-icons">arrow_forward_ios</span>
+            </button>
+
+            <button className="ImageSlider_Btn ImageSlider_StopAnimation_Btn" onClick={togglePlay}>
+                {isPlaying ? <span className="material-icons">pause_circle</span> : <span className="material-icons">play_circle</span>}
+            </button>
+
+            <div className="ImageSlider_Indicators">
+                {content.map((_, index) => (
+                    <div key={index} className={`ImageSlider_Indicator ${index === activeIndex ? "active" : ""}`} />
+                ))}
+            </div>
+        </div>
+    );
+}
