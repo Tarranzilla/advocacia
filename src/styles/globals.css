@@ -12,8 +12,10 @@
     --warning-color: #ffc107;
     --danger-color: #dc3545;
 
-    --text-color: #212529;
-    --bg-color: #f8f9fa;
+    --text-color: #e5a069;
+    --bg-color: #313840;
+
+    --bg-color-faded-50: #313840c2;
 
     --btn-color: #007bff;
     --btn-text-color: #fff;
@@ -50,25 +52,46 @@ html {
 
 body {
     font-family: sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .Navbar {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
     gap: var(--medium-gap);
     padding: var(--medium-gap);
     height: var(--Navbar-height);
     z-index: 3;
-    background-color: white;
+    background-color: var(--bg-color-faded-50);
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+.Navbar_Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--medium-gap);
+    padding-inline: var(--large-gap);
+    width: 100%;
+    max-width: 1000px;
 }
 
 .Navbar_Links {
     margin-left: auto;
     display: flex;
     gap: var(--medium-gap);
+}
+
+.Navbar_Link {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 .Menu_Container {
@@ -78,9 +101,10 @@ body {
 .Page_Wrapper {
     display: flex;
     flex-direction: column;
-    gap: var(--max-gap);
+    gap: var(--large-gap);
     padding-inline: var(--medium-gap);
-    padding-bottom: var(--Footer-height);
+    padding-top: calc(var(--Navbar-height) + 0.25rem);
+    padding-bottom: calc(var(--Footer-height) + 0.25rem);
     min-height: var(--Content-height);
     margin-inline: auto;
     max-width: 1000px;
@@ -89,7 +113,7 @@ body {
 .Section_Title {
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 /* INICIO */
@@ -97,13 +121,16 @@ body {
 .ImageSlider {
     position: relative;
     display: flex;
-    overflow-x: auto;
+    overflow: hidden;
     width: 100%;
     border-radius: 1rem;
 }
 
 .ImageSlide {
     width: 100%;
+    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .ImageSlider_Btn {
@@ -137,7 +164,7 @@ body {
 }
 
 .ImageSlide img {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     object-fit: cover;
 }
@@ -203,8 +230,9 @@ body {
     flex-direction: column;
     gap: var(--small-gap);
     padding: var(--medium-gap);
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
     border-radius: var(--border-radius);
+    color: var(--text-color);
 }
 
 .Expertise_Card img {
@@ -212,6 +240,8 @@ body {
     width: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
+    border: 1px solid var(--text-color);
+    margin-bottom: var(--normal-gap);
 }
 
 .Card_Link {
@@ -257,7 +287,8 @@ body {
     align-items: center;
     justify-content: center;
     padding-inline: var(--medium-gap);
-    background-color: white;
+    background-color: var(--bg-color-faded-50);
+    backdrop-filter: blur(5px);
 }
 
 .Footer_Actions {
@@ -273,6 +304,10 @@ body {
 @media (max-width: 800px) {
     .Desktop_Only {
         display: none;
+    }
+
+    .Navbar_Content {
+        padding-inline: 0;
     }
 
     .ImageSlide img {

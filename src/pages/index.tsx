@@ -70,7 +70,7 @@ export default function Home() {
 
                                 <div className="Working_Hours Contact_Layout_Item">
                                     <h3>Email</h3>
-                                    <p>teste@teste.com</p>
+                                    <p>fran@stressermachado.adv.br</p>
                                 </div>
 
                                 <div className="Working_Hours Contact_Layout_Item">
