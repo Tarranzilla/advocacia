@@ -11,7 +11,7 @@ export type Image_List = {
 const banner_image_list: Image_List[] = [
     {
         key: "banner1",
-        title: "Banner Inicial",
+        title: "Somos especialistas em Direito Cível, Trabalhista, Sucessões e Família",
         imgSrc: "/banner_imgs/advocacia_001.png",
         size: {
             width: 740,
@@ -20,7 +20,7 @@ const banner_image_list: Image_List[] = [
     },
     {
         key: "banner2",
-        title: "Banner 2",
+        title: "Atendemos principalmente em Curitiba e Região Metropolitana",
         imgSrc: "/banner_imgs/curitiba_001.png",
         size: {
             width: 740,

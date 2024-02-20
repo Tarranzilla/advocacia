@@ -45,6 +45,7 @@ export default function ImageSlider({ content }: ImageSliderProps) {
                     if (index === activeIndex) {
                         return (
                             <m.div
+                                className="Banner_Slide"
                                 key={contentItem.key}
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
@@ -52,6 +53,7 @@ export default function ImageSlider({ content }: ImageSliderProps) {
                                 transition={{ duration: 0.5 }}
                                 className="ImageSlide"
                             >
+                                <h1 className="Banner_Title">{contentItem.title}</h1>
                                 <Image
                                     src={contentItem.imgSrc}
                                     alt={contentItem.title}

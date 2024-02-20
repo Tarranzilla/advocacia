@@ -27,10 +27,10 @@ export default function Home() {
                         <div className="About_Container">
                             <h1 className="Section_Title">Quem Somos</h1>
                             <p>
-                                O escritório de advocacia Stresser e Machado é reconhecido por sua liderança exemplar, composto por duas advogadas
-                                mulheres de destaque na área. Com uma sólida experiência adquirida no serviço público, elas trazem consigo um profundo
-                                entendimento das nuances legais e dos meandros do sistema jurídico. Ao longo de seus cinco anos de atuação no mercado,
-                                têm se destacado pela dedicação incansável em garantir os melhores resultados para seus clientes.
+                                O escritório de advocacia Stresser e Machado é reconhecido pela liderança exemplar de duas advogadas de destaque na
+                                área. Com uma sólida experiência adquirida no serviço público, elas trazem consigo um profundo entendimento das
+                                nuances legais e dos meandros do sistema jurídico. Ao longo de seus dez anos de atuação no mercado, têm se destacado
+                                pela dedicação incansável em garantir os melhores resultados para seus clientes.
                             </p>
                             <p>
                                 Ambas as advogadas possuem expertise em diversas áreas do direito, incluindo direito civil, criminal, trabalhista e
