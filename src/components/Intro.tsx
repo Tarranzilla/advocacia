@@ -18,7 +18,7 @@ export default function Intro() {
         <>
             <AnimatePresence mode="wait">
                 {isMounted && (
-                    <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} className="Intro">
+                    <m.div initial={{ opacity: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} className="Intro">
                         <div className="Intro_Content">
                             <Image className="Intro_Image" src={"/brand_imgs/Full_Logo_Orange.png"} alt="Logo" width={400} height={400} />
                         </div>
