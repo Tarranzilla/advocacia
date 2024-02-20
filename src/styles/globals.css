@@ -425,6 +425,7 @@ body {
 }
 
 .ImageSlider_StopAnimation_Btn {
+    z-index: 3;
     bottom: 0;
     right: 0;
     height: 8rem;
@@ -441,6 +442,7 @@ body {
 }
 
 .ImageSlider_Indicators {
+    z-index: 2;
     position: absolute;
     display: flex;
     align-items: center;
@@ -565,6 +567,10 @@ body {
     border-radius: var(--border-radius);
     border: none;
     margin-top: auto;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 /* CONTATO */
@@ -607,6 +613,15 @@ body {
     padding-inline: var(--medium-gap);
     background-color: var(--bg-color-faded-50);
     backdrop-filter: blur(5px);
+}
+
+.Footer_Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    padding-inline: var(--large-gap);
 }
 
 .Footer_Actions {
@@ -658,5 +673,14 @@ body {
 @media (min-width: 800px) {
     .Mobile_Only {
         display: none;
+    }
+
+    .Footer_Content {
+        justify-content: space-between;
+    }
+
+    .Footer_Actions {
+        width: auto;
+        justify-content: flex-end;
     }
 }

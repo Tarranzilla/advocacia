@@ -4,8 +4,8 @@ export default function Privacidade() {
             <div className="Privacy_Policy">
                 <h3>Política de Privacidade</h3>
                 <p>
-                    Esta Política de Privacidade descreve como o escritório de advocacia Stresser e Machado ("nós", "nosso" ou "nos") coleta, usa e
-                    compartilha informações pessoais quando você usa nosso site www.stresseremachado.adv.br.
+                    Esta Política de Privacidade descreve como o escritório de advocacia Stresser e Machado (&quot;nós&quot;, &quot;nosso&quot; ou
+                    &quot;nos&quot;) coleta, usa e compartilha informações pessoais quando você usa nosso site www.stresseremachado.adv.br.
                 </p>
 
                 <h3>Informações que Coletamos</h3>

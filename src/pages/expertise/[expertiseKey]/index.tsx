@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Link from "next/link";
 
 import expertiseList from "@/content_lists/expertise_list";
 
@@ -11,6 +12,12 @@ export default function Expertise() {
 
     // Find the expertise with the matching key
     const expertise = expertiseList.find((expertise) => expertise.key === expertiseKey);
+
+    const message = "Olá gostaria de fazer a cotação de serviços relacionados a " + expertise?.title + ".";
+
+    function toUrlValidString(str: string) {
+        return encodeURIComponent(str);
+    }
 
     // Render the expertise details
     return (
@@ -37,7 +44,14 @@ export default function Expertise() {
                         </div>
                     )}
 
-                    <button className="Schedule_Btn">Agende uma Consulta</button>
+                    <Link
+                        className="Schedule_Btn"
+                        href={`https://wa.me/1234567890?text=${toUrlValidString(message)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Agende uma Consulta
+                    </Link>
                 </main>
             </m.div>
         </>

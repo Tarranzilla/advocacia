@@ -4,8 +4,8 @@ export default function Privacidade() {
             <div className="terms-of-use">
                 <h3>Termos de Uso</h3>
                 <p>
-                    Estes Termos de Uso regem o uso do site do escritório de advocacia Stresser e Machado ("nós", "nosso" ou "nos"). Ao acessar e usar
-                    nosso site [inserir URL do site], você concorda com estes termos e condições.
+                    Estes Termos de Uso regem o uso do site do escritório de advocacia Stresser e Machado (&quot;nós&quot;, &quot;nosso&quot; ou
+                    &quot;nos&quot;). Ao acessar e usar nosso site [inserir URL do site], você concorda com estes termos e condições.
                 </p>
 
                 <h3>Uso do Site</h3>
