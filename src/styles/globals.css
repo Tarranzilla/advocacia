@@ -166,9 +166,13 @@ body {
     padding-inline: var(--medium-gap);
     padding-top: calc(var(--Navbar-height) + 0.25rem);
     padding-bottom: calc(var(--Footer-height) + 0.25rem);
-    min-height: var(--Content-height);
+    min-height: 100vh;
     margin-inline: auto;
     max-width: 1000px;
+}
+
+.Expertise_Page_Wrapper {
+    max-height: 100vh;
 }
 
 .Section_Title {
@@ -321,6 +325,47 @@ body {
 .Card_Link {
     text-decoration: none;
     color: #000000;
+}
+
+.Expertise_Page_Title {
+    text-align: center;
+    font-family: "Willpower Slab Regular", sans-serif;
+    letter-spacing: 0.25rem;
+    border: 2px solid var(--text-color);
+    padding: var(--medium-gap) var(--large-gap);
+}
+
+.Expertise_Page_Description {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.Expertise_SubItems_List {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    padding-top: var(--large-gap);
+    gap: var(--large-gap);
+}
+
+.Expertise_SubItem {
+    padding-bottom: var(--large-gap);
+    border-bottom: 1px solid var(--text-color);
+}
+
+.SubItem_Title {
+    margin-bottom: var(--small-gap);
+}
+
+.Schedule_Btn {
+    padding: var(--medium-gap) var(--small-gap);
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-radius: var(--border-radius);
+    border: none;
+    margin-top: auto;
 }
 
 /* CONTATO */

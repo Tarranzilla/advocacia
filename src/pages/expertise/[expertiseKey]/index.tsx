@@ -22,11 +22,22 @@ export default function Expertise() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} key={expertise?.key}>
-                <main className="Page_Wrapper">
-                    <h1>{expertise?.title}</h1>
-                    <p>{expertise?.description}</p>
+                <main className="Page_Wrapper Expertise_Page_Wrapper">
+                    <h1 className="Expertise_Page_Title">{expertise?.title}</h1>
+                    <p className="Expertise_Page_Description">{expertise?.description}</p>
 
-                    <button>Agende uma Consulta</button>
+                    {expertise?.subitems && (
+                        <div className="Expertise_SubItems_List">
+                            {expertise?.subitems?.map((subitem, index) => (
+                                <div className="Expertise_SubItem" key={index}>
+                                    <h3 className="SubItem_Title">{subitem.title}</h3>
+                                    <p className="SubItem_Description">{subitem.description}</p>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+
+                    <button className="Schedule_Btn">Agende uma Consulta</button>
                 </main>
             </m.div>
         </>
