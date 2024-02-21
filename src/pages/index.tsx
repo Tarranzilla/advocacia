@@ -103,11 +103,12 @@ export default function Home() {
                                         <h3>Formação Acadêmica</h3>
                                         <p>
                                             Especialização em Direito Tributário e Processual Tributário (2012-2013) - Centro Universitário Curitiba.
-                                            Título: "A Simultaneidade Normativa na Isenção Tributária". Orientador: Mauricio Dalri Timm do Valle
+                                            Título: &quot;A Simultaneidade Normativa na Isenção Tributária&quot;. Orientador: Mauricio Dalri Timm do
+                                            Valle
                                         </p>
                                         <p>
-                                            Graduação em Direito (2006-2011) - Universidade Tuiuti do Paraná. Título: "Pedágio - Aspectos Jurídicos,
-                                            Políticos e Sociais". Orientador: Pericles Coelho
+                                            Graduação em Direito (2006-2011) - Universidade Tuiuti do Paraná. Título: &quot;Pedágio - Aspectos
+                                            Jurídicos, Políticos e Sociais&quot;. Orientador: Pericles Coelho
                                         </p>
 
                                         <h3>Produções Bibliográficas</h3>
