@@ -73,6 +73,10 @@ body {
     color: var(--text-color);
 }
 
+body.body-no-scroll {
+    overflow: hidden;
+}
+
 /* INTRO */
 
 .Intro {
@@ -433,7 +437,7 @@ body {
     background: none;
 }
 
-.ImageSlide img {
+.Banner_Slide > img {
     height: 70vh;
     width: 100%;
     object-fit: cover;

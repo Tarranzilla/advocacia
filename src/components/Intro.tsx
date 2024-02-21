@@ -14,6 +14,21 @@ export default function Intro() {
         return () => clearTimeout(timer); // This will clear the timer when the component unmounts
     }, []);
 
+    useEffect(() => {
+        if (isMounted) {
+            // Add the overflow hidden rule to the body
+            document.body.classList.add("body-no-scroll");
+        } else {
+            // Remove the overflow hidden rule from the body
+            document.body.classList.remove("body-no-scroll");
+        }
+
+        // Clean up function
+        return () => {
+            document.body.classList.remove("body-no-scroll");
+        };
+    }, [isMounted]);
+
     return (
         <>
             <AnimatePresence mode="wait">
