@@ -70,11 +70,6 @@ export const expertiseList: Expertise_List[] = [
                 title: "Normas Coletivas",
                 description: "Convenções e acordos coletivos de trabalho.",
             },
-            {
-                key: "representacao_sindical",
-                title: "Representação Sindical",
-                description: "Atuação e representação dos sindicatos.",
-            },
         ],
     },
     {
@@ -207,7 +202,7 @@ export const expertiseList: Expertise_List[] = [
         key: "direito_familia",
         title: "Direito de Família",
         description: "Regula as relações familiares, como casamento, divórcio, guarda de filhos, pensão alimentícia, etc.",
-        imgSrc: "/expertise_imgs/direito_familia_001.png",
+        imgSrc: "/expertise_imgs/direito_familia_002.png",
         pageLink: "/expertise/direito_familia",
         size: {
             width: 300,

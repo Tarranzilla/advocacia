@@ -213,8 +213,8 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="Working_Hours Contact_Layout_Item">
-                                <h2>Endereço</h2>
+                            <div className="Working_Hours Contact_Layout_Item Adress_Item">
+                                <h1 className="Adress_Title">Endereço</h1>
                                 <p>Avenida Manoel Ribas, nº 507 - Sala 05 - Mercês Curitiba - PR 80510-346 Brasil</p>
                             </div>
 
