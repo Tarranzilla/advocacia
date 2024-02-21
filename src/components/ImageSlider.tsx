@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Image_List } from "@/content_lists/banner_image_list";
 import { motion as m, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 type ImageSliderProps = {
     content: Image_List[];
@@ -22,6 +23,12 @@ export default function ImageSlider({ content }: ImageSliderProps) {
     const togglePlay = () => {
         setIsPlaying(!isPlaying);
     };
+
+    const message = "Olá gostaria de fazer a cotação de seus serviços.";
+
+    function toUrlValidString(str: string) {
+        return encodeURIComponent(str);
+    }
 
     // Change slide every 5 seconds
     useEffect(() => {
@@ -53,6 +60,12 @@ export default function ImageSlider({ content }: ImageSliderProps) {
                                 transition={{ duration: 0.5 }}
                             >
                                 <h1 className="Banner_Title">{contentItem.title}</h1>
+                                <h3 className="Banner_SubTitle">{contentItem.subtitle}</h3>
+
+                                <Link href={`https://wa.me/1234567890?text=${toUrlValidString(message)}`} className="Banner_Action_Btn">
+                                    Agende uma Consulta
+                                </Link>
+
                                 <Image
                                     src={contentItem.imgSrc}
                                     alt={contentItem.title}

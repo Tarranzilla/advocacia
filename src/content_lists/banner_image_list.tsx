@@ -1,6 +1,9 @@
 export type Image_List = {
     key: string;
     title: string;
+    subtitle: string;
+    actionBtn?: string;
+    actionBtnLink?: string;
     imgSrc: string;
     size: {
         width: number;
@@ -11,8 +14,9 @@ export type Image_List = {
 const banner_image_list: Image_List[] = [
     {
         key: "banner1",
-        title: "Somos especialistas em Direito Cível, Trabalhista, Sucessões e Família",
-        imgSrc: "/banner_imgs/advocacia_001.png",
+        title: "Maximize sua Aposentadoria",
+        subtitle: "Descubra se você tem direito à Revisão da Vida Toda e aumente sua aposentadoria agora mesmo!",
+        imgSrc: "/banner_imgs/banner_aposentadoria_001.png",
         size: {
             width: 740,
             height: 420,
@@ -20,8 +24,9 @@ const banner_image_list: Image_List[] = [
     },
     {
         key: "banner2",
-        title: "Atendemos principalmente em Curitiba e Região Metropolitana",
-        imgSrc: "/banner_imgs/curitiba_001.png",
+        title: "Assessoria Especializada em Benefícios do INSS",
+        subtitle: "Obtenha orientação profissional para garantir seus direitos previdenciários. Conte com nossa experiência!.",
+        imgSrc: "/banner_imgs/banner_inss_001.png",
         size: {
             width: 740,
             height: 420,
@@ -29,8 +34,9 @@ const banner_image_list: Image_List[] = [
     },
     {
         key: "banner3",
-        title: "Banner 3",
-        imgSrc: "/banner_imgs/curitiba_002.png",
+        title: "Facilite o Processo de Inventário",
+        subtitle: "Apoio jurídico especializado para agilizar e simplificar o processo de inventário.",
+        imgSrc: "/banner_imgs/banner_inventario_001.png",
         size: {
             width: 740,
             height: 420,
@@ -38,8 +44,10 @@ const banner_image_list: Image_List[] = [
     },
     {
         key: "banner4",
-        title: "Banner 4",
-        imgSrc: "/banner_imgs/curitiba_003.png",
+        title: "Proteja seus Direitos no Trabalho",
+        subtitle:
+            "Garanta um ambiente de trabalho justo e equilibrado. Conte com nossa expertise em Direito Trabalhista para defender seus interesses e garantir seus direitos laborais!",
+        imgSrc: "/banner_imgs/banner_trabalhista_001.png",
         size: {
             width: 740,
             height: 420,

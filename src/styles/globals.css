@@ -384,22 +384,50 @@ body.body-no-scroll {
 
 .Banner_Slide {
     position: relative;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem;
+    gap: var(--normal-gap);
 }
 
 .Banner_Title {
-    z-index: 3;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 2;
     font-family: "Willpower Slab Regular", sans-serif;
-    font-size: 1.6rem;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
     font-weight: 800;
+    letter-spacing: 0.25rem;
+    color: var(--text-color);
+    text-align: center;
+    text-shadow: var(--bg-color) 0 0 5px;
+    border-bottom: 4px solid var(--text-color);
+    padding-bottom: var(--normal-gap);
+}
+
+.Banner_SubTitle {
+    z-index: 2;
+    font-family: "Willpower Slab Regular", sans-serif;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
     letter-spacing: 0.25rem;
     color: black;
     text-align: center;
-    width: 90%;
     text-shadow: var(--bg-color) 0 0 5px;
+}
+
+.Banner_Action_Btn {
+    margin-top: auto;
+    z-index: 2;
+    padding: var(--medium-gap) var(--large-gap);
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .ImageSlider_Btn {
@@ -438,7 +466,8 @@ body.body-no-scroll {
 }
 
 .Banner_Slide > img {
-    height: 70vh;
+    position: absolute;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     filter: contrast(0.5) saturate(1.6);
@@ -671,6 +700,10 @@ body.body-no-scroll {
 
     .ImageSlider_Indicators {
         height: 4rem;
+    }
+
+    .Banner_Slide {
+        padding: 4rem;
     }
 }
 
