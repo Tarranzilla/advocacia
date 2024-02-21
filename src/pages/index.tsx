@@ -67,7 +67,21 @@ export default function Home() {
                                             >
                                                 OAB | 60235
                                             </Link>
-                                            <p>Advogada</p>
+
+                                            <div className="Team_Member_Actions">
+                                                <div className="Team_Member_Action">
+                                                    <span className="material-icons">phone</span>
+                                                    <p>(41) 991 191 904</p>
+                                                </div>
+                                                <div className="Team_Member_Action">
+                                                    <span className="material-icons">fax</span>
+                                                    <p>(41) 3668-8000</p>
+                                                </div>
+                                                <div className="Team_Member_Action">
+                                                    <span className="material-icons">mail</span>
+                                                    <p>telma@stresseremachado.adv.br</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="Team_Member_Description">
@@ -121,7 +135,21 @@ export default function Home() {
                                             >
                                                 OAB | 46290
                                             </Link>
-                                            <p>Advogada</p>
+
+                                            <div className="Team_Member_Actions">
+                                                <div className="Team_Member_Action">
+                                                    <span className="material-icons">phone</span>
+                                                    <p>(41) 999 155 252</p>
+                                                </div>
+                                                <div className="Team_Member_Action">
+                                                    <span className="material-icons">fax</span>
+                                                    <p>(41) 3335-6000</p>
+                                                </div>
+                                                <div className="Team_Member_Action">
+                                                    <span className="material-icons">mail</span>
+                                                    <p>fran@stressermachado.adv.br</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="Team_Member_Description">

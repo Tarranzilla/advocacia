@@ -370,6 +370,8 @@ body.body-no-scroll {
     font-family: "Willpower Slab Regular", sans-serif;
     font-size: 2rem;
     letter-spacing: 0.25rem;
+    border-bottom: 1px solid var(--text-color);
+    padding: var(--medium-gap) 0;
 }
 
 /* INICIO */
@@ -552,6 +554,7 @@ body.body-no-scroll {
 .Team_Container {
     display: flex;
     gap: var(--max-gap);
+    flex-wrap: wrap;
 }
 
 .Team_Member {
@@ -564,13 +567,14 @@ body.body-no-scroll {
 .Team_Member_Header {
     display: flex;
     gap: var(--normal-gap);
+    flex-wrap: wrap;
 }
 
 .Team_Member_Header > img {
     display: flex;
     flex: 1;
     object-fit: cover;
-    width: 300px;
+    width: 200px;
     height: 300px;
     border-radius: var(--normal-gap);
     border: 3px solid var(--text-color);
@@ -579,6 +583,7 @@ body.body-no-scroll {
 .Team_Member_Name {
     padding-bottom: var(--normal-gap);
     border-bottom: 1px solid var(--text-color);
+    font-size: 1.8rem;
 }
 
 .Team_Member_Info {
@@ -607,6 +612,13 @@ body.body-no-scroll {
 .Team_Member_OAB_Link:hover {
     font-size: 1.2rem;
     background-color: white;
+}
+
+.Team_Member_Action {
+    display: flex;
+    align-items: center;
+    gap: var(--normal-gap);
+    font-size: 0.85rem;
 }
 
 .Team_Member_Description {
@@ -688,13 +700,22 @@ body.body-no-scroll {
     overflow-y: auto;
     border-top: 1px solid var(--text-color);
     border-bottom: 1px solid var(--text-color);
-    padding-top: var(--large-gap);
-    gap: var(--large-gap);
 }
 
 .Expertise_SubItem {
-    padding-bottom: var(--large-gap);
+    padding: var(--large-gap);
     border-bottom: 1px solid var(--text-color);
+    transition: background-color 0.15s ease;
+}
+
+.Expertise_SubItems_List > .Expertise_SubItem:last-child {
+    border-bottom: none;
+}
+
+.Expertise_SubItem:focus-within,
+.Expertise_SubItem:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
 }
 
 .SubItem_Title {
@@ -712,6 +733,16 @@ body.body-no-scroll {
     cursor: pointer;
     text-decoration: none;
     font-weight: 500;
+    width: 100%;
+    max-width: 30rem;
+    margin-inline: auto;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+
+.Schedule_Btn:focus-within,
+.Schedule_Btn:hover {
+    background-color: white;
+    font-size: 1.2rem;
 }
 
 /* CONTATO */
