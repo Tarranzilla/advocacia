@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 import banner_image_list from "@/content_lists/banner_image_list";
 import expertiseList from "@/content_lists/expertise_list";
@@ -29,7 +30,7 @@ export default function Home() {
                             <p>
                                 O escritório de advocacia Stresser e Machado é reconhecido pela liderança exemplar de duas advogadas de destaque na
                                 área. Com uma sólida experiência adquirida no serviço público, elas trazem consigo um profundo entendimento das
-                                nuances legais e dos meandros do sistema jurídico. Ao longo de seus dez anos de atuação no mercado, têm se destacado
+                                nuances legais e dos meandros do sistema jurídico. Ao longo de seus vinte anos de atuação no mercado, têm se destacado
                                 pela dedicação incansável em garantir os melhores resultados para seus clientes.
                             </p>
                             <p>
@@ -48,6 +49,108 @@ export default function Home() {
                                 éticos. Isso garante não apenas resultados satisfatórios, mas também a confiança e a satisfação duradouras daqueles
                                 que confiam em nossos serviços.
                             </p>
+
+                            <h1 className="Section_Title">Nossa Equipe</h1>
+
+                            <div className="Team_Container">
+                                <div className="Team_Member">
+                                    <div className="Team_Member_Header">
+                                        <Image src="/team_imgs/advogada_001.png" alt="Telma Stresser" width={200} height={200} />
+                                        <div className="Team_Member_Info">
+                                            <h3 className="Team_Member_Name">Telma Regina Machado</h3>
+
+                                            <Link
+                                                href="https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=60235&tpinsc=A"
+                                                rel="noopener noreferrer"
+                                                target="_blank"
+                                                className="Team_Member_OAB_Link"
+                                            >
+                                                OAB | 60235
+                                            </Link>
+                                            <p>Advogada</p>
+                                        </div>
+                                    </div>
+                                    <div className="Team_Member_Description">
+                                        <p>
+                                            Pós-graduada em Direito e Processo Tributário pela UNICURITIBA em 2013. Atua na advocacia tributária
+                                            administrativa e judicial. Membro do Conselho de Contribuintes e Recursos Fiscais/PR, representando a
+                                            FIEP/PR.
+                                        </p>
+                                        <p>
+                                            Atualmente, advoga no Conselho de Contribuintes e Recursos Fiscais (CCRF), atuando em sustentação oral e
+                                            defesas de Contribuintes do Estado do Paraná.
+                                        </p>
+                                        <p>
+                                            Mestranda em Direito Empresarial e Cidadania na UNIVERSIDADE UNICURITIBA. Possui escritório próprio em
+                                            Curitiba/PR, atuando nas áreas de Direito Tributário, Imobiliário, Família, Consumidor, Trabalho,
+                                            Previdenciário e Bancário.
+                                        </p>
+
+                                        <h3>Formação Acadêmica</h3>
+                                        <p>
+                                            Especialização em Direito Tributário e Processual Tributário (2012-2013) - Centro Universitário Curitiba.
+                                            Título: "A Simultaneidade Normativa na Isenção Tributária". Orientador: Mauricio Dalri Timm do Valle
+                                        </p>
+                                        <p>
+                                            Graduação em Direito (2006-2011) - Universidade Tuiuti do Paraná. Título: "Pedágio - Aspectos Jurídicos,
+                                            Políticos e Sociais". Orientador: Pericles Coelho
+                                        </p>
+
+                                        <h3>Produções Bibliográficas</h3>
+                                        <p>
+                                            MACHADO, T. R. CONTRIBUIÇÃO SINDICAL E SUA NATUREZA JURÍDICA. 2018. (Apresentação de Trabalho/Congresso)
+                                        </p>
+                                        <p>
+                                            MACHADO, T. R. A Simultaneidade Normativa na Isenção Tributária. 2016. (Apresentação de
+                                            Trabalho/Congresso)
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="Team_Member">
+                                    <div className="Team_Member_Header">
+                                        <Image src="/team_imgs/advogada_002.png" alt="Francine Machado" width={200} height={200} />
+                                        <div className="Team_Member_Info">
+                                            <h3 className="Team_Member_Name">Franchielle Stresser Gioppo</h3>
+
+                                            <Link
+                                                href="https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=46290&tpinsc=A"
+                                                rel="noopener noreferrer"
+                                                target="_blank"
+                                                className="Team_Member_OAB_Link"
+                                            >
+                                                OAB | 46290
+                                            </Link>
+                                            <p>Advogada</p>
+                                        </div>
+                                    </div>
+                                    <div className="Team_Member_Description">
+                                        <p>
+                                            Graduada em Direito pela Pontifícia Universidade Católica do Paraná (2007), com especialização em Direito
+                                            Público com ênfase em Direito Constitucional pelo renomado jurista Damásio de Jesus.
+                                        </p>
+                                        <p>Advogada atuante, possui escritório próprio nas áreas do Direito do Trabalho, Família e Previdenciário.</p>
+
+                                        <h3>Formação Acadêmica</h3>
+                                        <p>
+                                            Especialização em Direito Público (2007-2008) - Instituto São Domingos Cursos e Serviços Editoriais LTDA,
+                                            Orientador: Guilherme da Câmara Silva
+                                        </p>
+                                        <p>
+                                            Graduação em Direito (2002-2007) - Pontifícia Universidade Católica do Paraná, Orientador: José Carlos
+                                            Santos Gomes
+                                        </p>
+
+                                        <h3>Formação Complementar</h3>
+                                        <p>Cálculos Trabalhistas (2009) - Escola Superior da Advocacia- OAB/PR</p>
+                                        <p>Noções Gerais de Direito Previdenciário (2008) - Curso Jurídico - Extensão Universitária do Paraná</p>
+
+                                        <h3>Histórico Profissional</h3>
+
+                                        <p>Assessoria Jurídica do Banco do Brasil S/A (2005-2007) - Estagiária</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
                     <section id="expertise">
@@ -65,17 +168,19 @@ export default function Home() {
                                     <h3>Telefone</h3>
                                     <p>(41) 3335-6000</p>
                                     <p>(41) 3668-8000</p>
-                                    <p>(41) 99915-5252</p>
+                                    <p>(41) 999 155 252</p>
+                                    <p>(41) 991 191 904</p>
                                 </div>
 
                                 <div className="Working_Hours Contact_Layout_Item">
                                     <h3>Email</h3>
+                                    <p>telma@stresseremachado.adv.br</p>
                                     <p>fran@stressermachado.adv.br</p>
                                 </div>
 
                                 <div className="Working_Hours Contact_Layout_Item">
                                     <h3>Horários de Funcionamento</h3>
-                                    <p>Segunda a Sexta: 08:00 - 18:00</p>
+                                    <p>Segunda a Sexta: 09:00 - 12:00 | 13:00 - 18:00</p>
                                 </div>
                             </div>
 

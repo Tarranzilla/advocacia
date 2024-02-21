@@ -274,6 +274,13 @@ body.body-no-scroll {
     font-family: "Willpower Slab Regular", sans-serif;
     font-size: 1.2rem;
     letter-spacing: 0.125rem;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.Navbar_Link:focus-within,
+.Navbar_Link:hover {
+    font-size: 1.4rem;
+    color: white;
 }
 
 .Menu_Container {
@@ -372,7 +379,6 @@ body.body-no-scroll {
     display: flex;
     overflow: hidden;
     width: 100%;
-    border-radius: 1rem;
 }
 
 .ImageSlide {
@@ -400,7 +406,7 @@ body.body-no-scroll {
     font-size: clamp(1.8rem, 4vw, 2.6rem);
     font-weight: 800;
     letter-spacing: 0.25rem;
-    color: var(--text-color);
+    color: white;
     text-align: center;
     text-shadow: var(--bg-color) 0 0 5px;
     border-bottom: 4px solid var(--text-color);
@@ -412,7 +418,7 @@ body.body-no-scroll {
     font-family: "Willpower Slab Regular", sans-serif;
     font-size: clamp(1.2rem, 2vw, 1.6rem);
     letter-spacing: 0.25rem;
-    color: black;
+    color: white;
     text-align: center;
     text-shadow: var(--bg-color) 0 0 5px;
 }
@@ -428,6 +434,13 @@ body.body-no-scroll {
     cursor: pointer;
     text-decoration: none;
     font-weight: 500;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+.Banner_Action_Btn:focus-within,
+.Banner_Action_Btn:hover {
+    font-size: 1.2rem;
+    background-color: white;
 }
 
 .ImageSlider_Btn {
@@ -435,7 +448,7 @@ body.body-no-scroll {
     height: 100%;
     width: 8rem;
     z-index: 2;
-    background: linear-gradient(to right, black, transparent);
+    background: linear-gradient(to right, var(--bg-color), transparent);
     cursor: pointer;
     color: white;
     border: none;
@@ -443,6 +456,17 @@ body.body-no-scroll {
 
 .ImageSlider_Btn > * {
     color: var(--text-color);
+}
+
+.ImageSlider_Arrow {
+    color: var(--text-color);
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.ImageSlider_Arrow:focus-within,
+.ImageSlider_Arrow:hover {
+    font-size: 2rem;
+    color: white;
 }
 
 .ImageSlider_Previous_Btn {
@@ -453,7 +477,7 @@ body.body-no-scroll {
 .ImageSlider_Next_Btn {
     top: 0;
     right: 0;
-    background: linear-gradient(to left, black, transparent);
+    background: linear-gradient(to left, var(--bg-color), transparent);
 }
 
 .ImageSlider_StopAnimation_Btn {
@@ -474,6 +498,16 @@ body.body-no-scroll {
     z-index: 1;
 }
 
+.Banner_Top_Fader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8rem;
+    background: linear-gradient(to bottom, var(--bg-color), transparent);
+    z-index: 2;
+}
+
 .ImageSlider_Indicators {
     z-index: 2;
     position: absolute;
@@ -485,7 +519,7 @@ body.body-no-scroll {
     right: 0;
     width: 100%;
     height: 8rem;
-    background: linear-gradient(to top, black, transparent);
+    background: linear-gradient(to top, var(--bg-color), transparent);
     gap: var(--small-gap);
 }
 
@@ -515,6 +549,72 @@ body.body-no-scroll {
     margin-inline: auto;
 }
 
+.Team_Container {
+    display: flex;
+    gap: var(--max-gap);
+}
+
+.Team_Member {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: var(--medium-gap);
+}
+
+.Team_Member_Header {
+    display: flex;
+    gap: var(--normal-gap);
+}
+
+.Team_Member_Header > img {
+    display: flex;
+    flex: 1;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: var(--normal-gap);
+    border: 3px solid var(--text-color);
+}
+
+.Team_Member_Name {
+    padding-bottom: var(--normal-gap);
+    border-bottom: 1px solid var(--text-color);
+}
+
+.Team_Member_Info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--normal-gap);
+    flex: 1;
+}
+.Team_Member_OAB_Link {
+    display: flex;
+    gap: var(--normal-gap);
+    align-items: center;
+    justify-content: center;
+    padding: var(--small-gap) var(--small-gap);
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+.Team_Member_OAB_Link:focus-within,
+.Team_Member_OAB_Link:hover {
+    font-size: 1.2rem;
+    background-color: white;
+}
+
+.Team_Member_Description {
+    display: flex;
+    flex-direction: column;
+    gap: var(--normal-gap);
+}
+
 /* ATUAÇÃO  */
 
 .Services_Container {
@@ -539,6 +639,14 @@ body.body-no-scroll {
     border: 1px solid var(--text-color);
     border-radius: var(--border-radius);
     color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.Expertise_Card:hover,
+.Expertise_Card:focus-within {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    transform: scale(1.025);
 }
 
 .Expertise_Card img {

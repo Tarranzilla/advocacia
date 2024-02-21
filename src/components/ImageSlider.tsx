@@ -44,7 +44,7 @@ export default function ImageSlider({ content }: ImageSliderProps) {
     return (
         <div className="ImageSlider">
             <button className="ImageSlider_Btn ImageSlider_Previous_Btn" onClick={prevSlide}>
-                <span className="material-icons">arrow_back_ios</span>
+                <span className="material-icons ImageSlider_Arrow">arrow_back_ios</span>
             </button>
 
             <AnimatePresence mode="wait">
@@ -59,6 +59,7 @@ export default function ImageSlider({ content }: ImageSliderProps) {
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.5 }}
                             >
+                                <div className="Banner_Top_Fader"></div>
                                 <h1 className="Banner_Title">{contentItem.title}</h1>
                                 <h3 className="Banner_SubTitle">{contentItem.subtitle}</h3>
 
@@ -79,11 +80,15 @@ export default function ImageSlider({ content }: ImageSliderProps) {
             </AnimatePresence>
 
             <button className="ImageSlider_Btn ImageSlider_Next_Btn" onClick={nextSlide}>
-                <span className="material-icons">arrow_forward_ios</span>
+                <span className="ImageSlider_Arrow material-icons">arrow_forward_ios</span>
             </button>
 
             <button className="ImageSlider_Btn ImageSlider_StopAnimation_Btn" onClick={togglePlay}>
-                {isPlaying ? <span className="material-icons">pause_circle</span> : <span className="material-icons">play_circle</span>}
+                {isPlaying ? (
+                    <span className="material-icons ImageSlider_Arrow">pause_circle</span>
+                ) : (
+                    <span className="material-icons ImageSlider_Arrow">play_circle</span>
+                )}
             </button>
 
             <div className="ImageSlider_Indicators">
