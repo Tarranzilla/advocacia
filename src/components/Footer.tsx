@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function Footer() {
-    const message = "Olá gostaria de fazer a cotação de seus serviços.";
+    const message = "Olá, eu gostaria de agendar uma consulta.";
 
     function toUrlValidString(str: string) {
         return encodeURIComponent(str);
@@ -11,14 +11,14 @@ export default function Footer() {
         <div className="Footer">
             <div className="Footer_Content">
                 <div className="Footer_Actions Desktop_Only">
-                    <div className="Footer_Btn Privacy_Btn">
+                    <div className="Footer_Btn Privacy_Btn" title="Privacidade">
                         <Link href={"/privacidade"}>
-                            <span className="material-icons">verified_user</span>
+                            <span className="Footer_Icon material-icons">verified_user</span>
                         </Link>
                     </div>
-                    <div className="Footer_Btn Terms_Btn">
+                    <div className="Footer_Btn Terms_Btn" title="Termos de Uso">
                         <Link href="/termos-de-uso">
-                            <span className="material-icons">sticky_note_2</span>
+                            <span className="Footer_Icon material-icons">sticky_note_2</span>
                         </Link>
                     </div>
                 </div>
@@ -26,19 +26,19 @@ export default function Footer() {
                 <p className="Desktop_Only">© 2024 Stresser & Machado</p>
 
                 <div className="Footer_Actions">
-                    <div className="Footer_Btn Quote_Btn">
+                    <div className="Footer_Btn Quote_Btn" title="Agendar uma Consulta">
                         <Link href={`https://wa.me/1234567890?text=${toUrlValidString(message)}`} target="_blank" rel="noopener noreferrer">
-                            <span className="material-icons">request_quote</span>
+                            <span className="Footer_Icon material-icons">event_available</span>
                         </Link>
                     </div>
-                    <div className="Footer_Btn Phone_Btn">
+                    <div className="Footer_Btn Phone_Btn" title="Ligar Diretamente">
                         <Link href="tel:+1234567890">
-                            <span className="material-icons">phone</span>
+                            <span className="Footer_Icon material-icons">phone</span>
                         </Link>
                     </div>
-                    <div className="Footer_Btn Email_Btn">
+                    <div className="Footer_Btn Email_Btn" title="Enviar um email">
                         <Link href="mailto:example@example.com">
-                            <span className="material-icons">email</span>
+                            <span className="Footer_Icon material-icons">email</span>
                         </Link>
                     </div>
                 </div>
