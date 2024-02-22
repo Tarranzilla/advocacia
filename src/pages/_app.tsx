@@ -16,6 +16,8 @@ export default function App({ Component, pageProps }: AppProps) {
             <Analytics />
             <SpeedInsights />
 
+            <Intro />
+            <Cookies />
             <Navbar />
             <AnimatePresence mode="wait">
                 <Component {...pageProps} />
