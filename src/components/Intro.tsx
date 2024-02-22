@@ -9,7 +9,7 @@ export default function Intro() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsMounted(false);
-        }, 2000);
+        }, 1000);
 
         return () => clearTimeout(timer); // This will clear the timer when the component unmounts
     }, []);
