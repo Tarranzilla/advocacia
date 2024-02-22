@@ -73,7 +73,7 @@ export default function ImageSlider({ content }: ImageSliderProps) {
                                     alt={contentItem.title}
                                     width={contentItem.size.width}
                                     height={contentItem.size.height}
-                                    priority={index === 1}
+                                    priority={index === 0}
                                 />
                             </m.div>
                         );
