@@ -2,6 +2,8 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import Intro from "@/components/Intro";
 import Cookies from "@/components/Cookies";
 import Navbar from "@/components/Navbar";
@@ -10,6 +12,7 @@ import Footer from "@/components/Footer";
 export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
+            <Analytics />
             <Intro />
             <Cookies />
             <Navbar />
