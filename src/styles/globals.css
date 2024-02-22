@@ -666,9 +666,10 @@ body.body-no-scroll {
 
 .Expertise_Card:hover,
 .Expertise_Card:focus-within {
-    background-color: var(--text-color);
+    background-color: white;
     color: var(--bg-color);
     transform: scale(1.025);
+    filter: saturate(1.5);
 }
 
 .Expertise_Card img {
