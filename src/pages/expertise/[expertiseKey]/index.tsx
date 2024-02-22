@@ -24,7 +24,7 @@ export default function Expertise() {
         <>
             <Head>
                 <title>{"Stresser & Machado | " + expertise?.title}</title>
-                <meta name="description" content="Advocacia Ágil e Eficaz" />
+                <meta name="description" content={expertise?.metadescription} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

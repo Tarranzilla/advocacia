@@ -2,6 +2,7 @@ export type Expertise_List = {
     key: string;
     title: string;
     description: string;
+    metadescription: string;
     imgSrc: string;
     size: {
         width: number;
@@ -15,6 +16,7 @@ export type Expertise_Subitem = {
     key: string;
     title: string;
     description: string;
+    metadescription?: string;
     imgSrc?: string;
     size?: {
         width: number;
@@ -28,6 +30,8 @@ export const expertiseList: Expertise_List[] = [
         key: "direito_do_trabalho",
         title: "Direito do Trabalho",
         description: "Envolvendo leis e normas para empregadores e empregados.",
+        metadescription:
+            "Oferecemos orientação jurídica confiável e ágil para empregadores e empregados, abordando questões como contratos, demissões, rescisões e direitos trabalhistas.",
         imgSrc: "/expertise_imgs/direito_trabalhista_001.png",
         size: {
             width: 740,
@@ -76,6 +80,8 @@ export const expertiseList: Expertise_List[] = [
         key: "direito_previdenciario",
         title: "Direito Previdenciário",
         description: "Atuação nas questões relacionadas à previdência social.",
+        metadescription:
+            "Com expertise em Direito Previdenciário, nosso escritório fornece assistência abrangente em questões relacionadas à Previdência Social, incluindo aposentadorias, benefícios por incapacidade, pensões e revisões de benefícios.",
         imgSrc: "/expertise_imgs/direito_previdenciario_001.png",
         pageLink: "/expertise/direito_previdenciario",
         size: {
@@ -110,6 +116,8 @@ export const expertiseList: Expertise_List[] = [
         key: "direito_tributario",
         title: "Direito Tributário",
         description: "Atuação nas questões relacionadas aos tributos e obrigações fiscais.",
+        metadescription:
+            "Especializados em Direito Tributário, oferecemos suporte legal em questões fiscais, incluindo planejamento tributário, contestação de autuações, recuperação de tributos e defesa em processos administrativos e judiciais.",
         imgSrc: "/expertise_imgs/direito_tributario_001.png",
         pageLink: "/expertise/direito_tributario",
         size: {
@@ -148,6 +156,8 @@ export const expertiseList: Expertise_List[] = [
         key: "direito_civil",
         title: "Direito Civil",
         description: "Atuação nas questões relacionadas aos direitos e deveres das pessoas físicas e jurídicas.",
+        metadescription:
+            "Com vasta experiência em Direito Civil, nossa equipe oferece assistência em diversas áreas, como contratos, responsabilidade civil, direitos reais, sucessões, obrigações e questões relacionadas à propriedade.",
         imgSrc: "/expertise_imgs/direito_civil_001.png",
         pageLink: "/expertise/direito_civil",
         size: {
@@ -202,6 +212,8 @@ export const expertiseList: Expertise_List[] = [
         key: "direito_familia",
         title: "Direito de Família",
         description: "Regula as relações familiares, como casamento, divórcio, guarda de filhos, pensão alimentícia, etc.",
+        metadescription:
+            "Especializados em Direito de Família, prestamos suporte legal em questões como divórcio, pensão alimentícia, guarda de filhos, inventários, adoções, investigação de paternidade e outras questões familiares delicadas.",
         imgSrc: "/expertise_imgs/direito_familia_002.png",
         pageLink: "/expertise/direito_familia",
         size: {
@@ -253,6 +265,8 @@ export const expertiseList: Expertise_List[] = [
         key: "direito_sucessoes",
         title: "Direito das Sucessões",
         description: "Regulamenta a transmissão dos bens e direitos de uma pessoa falecida aos seus herdeiros.",
+        metadescription:
+            "Com expertise em Direito das Sucessões, oferecemos assistência em processos de inventário, partilha de bens, testamentos, planejamento sucessório e questões relacionadas à herança e patrimônio.",
         imgSrc: "/expertise_imgs/direito_sucessao_001.png",
         pageLink: "/expertise/direito_sucessoes",
         size: {
@@ -292,6 +306,8 @@ export const expertiseList: Expertise_List[] = [
         key: "direito_imobiliario",
         title: "Direito Imobiliário",
         description: "Atuação nas questões relacionadas a bens imóveis, como compra e venda, locação, usucapião, etc.",
+        metadescription:
+            "Fornecemos suporte legal em transações imobiliárias, contratos de locação, regularização de propriedades, litígios envolvendo imóveis, condomínios e questões relacionadas ao direito de propriedade.",
         imgSrc: "/expertise_imgs/direito_imobiliario_001.png",
         pageLink: "/expertise/direito_imobiliario",
         size: {
@@ -337,6 +353,8 @@ export const expertiseList: Expertise_List[] = [
         key: "direito_empresarial",
         title: "Direito Empresarial",
         description: "Regula as relações jurídicas decorrentes da atividade negocial das empresas.",
+        metadescription:
+            "Prestamos suporte jurídico a empresas em questões como constituição e dissolução de sociedades, contratos comerciais, recuperação judicial, falência, propriedade intelectual e questões societárias.",
         imgSrc: "/expertise_imgs/direito_administrativo_001.png",
         pageLink: "/expertise/direito_empresarial",
         size: {
@@ -371,6 +389,8 @@ export const expertiseList: Expertise_List[] = [
         key: "direito_agronegocio",
         title: "Direito do Agronegócio",
         description: "Regula as relações jurídicas decorrentes da atividade econômica no setor agropecuário.",
+        metadescription:
+            "Oferecemos suporte jurídico para empresas e produtores rurais em questões como contratos agrícolas, regularização fundiária, licenciamento ambiental, financiamento agrícola e litígios relacionados ao setor agropecuário.",
         imgSrc: "/expertise_imgs/direito_agronegocio_001.png",
         pageLink: "/expertise/direito_agronegocio",
         size: {
@@ -400,6 +420,8 @@ export const expertiseList: Expertise_List[] = [
         key: "direito_bancario",
         title: "Direito Bancário",
         description: "Regula as relações jurídicas entre instituições financeiras e clientes.",
+        metadescription:
+            "Oferecemos assistência jurídica em questões como contratos bancários, financiamentos, cobranças, defesa do consumidor bancário, disputas contratuais e litígios com instituições financeiras.",
         imgSrc: "/expertise_imgs/direito_bancario_001.png",
         pageLink: "/expertise/direito_bancario",
         size: {

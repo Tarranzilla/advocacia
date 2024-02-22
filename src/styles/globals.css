@@ -419,7 +419,7 @@ body.body-no-scroll {
     z-index: 2;
     font-family: "Willpower Slab Regular", sans-serif;
     font-size: clamp(1.125rem, 2vw, 1.6rem);
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.2rem;
     color: white;
     text-align: center;
     text-shadow: var(--bg-color) 0 0 5px;
@@ -711,6 +711,7 @@ body.body-no-scroll {
     align-items: center;
     justify-content: center;
     gap: var(--medium-gap);
+    margin-top: auto;
 }
 
 .Expertise_SubItems_List {
@@ -879,16 +880,16 @@ body.body-no-scroll {
     }
 
     .ImageSlider_Btn {
-        width: 4rem;
+        width: 2rem;
     }
 
     .ImageSlider_StopAnimation_Btn {
-        height: 4rem;
-        width: 4rem;
+        height: 2rem;
+        width: 2rem;
     }
 
     .ImageSlider_Indicators {
-        height: 4rem;
+        height: 2rem;
     }
 
     .Banner_Slide {
