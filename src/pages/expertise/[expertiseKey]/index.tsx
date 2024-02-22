@@ -100,14 +100,14 @@ export default function Expertise({ expertise }: { expertise: Expertise_List }) 
         <>
             <Head>
                 <title>{"Stresser & Machado | " + expertise.title}</title>
-                <meta name="description" content={expertise.description} />
+                <meta name="description" content={expertise.metadescription} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} key={expertise?.key}>
+            <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} key={expertise.key}>
                 <main className="Page_Wrapper Expertise_Page_Wrapper">
-                    <h1 className="Expertise_Page_Title">{expertise?.title}</h1>
-                    <p className="Expertise_Page_Description">{expertise?.description}</p>
+                    <h1 className="Expertise_Page_Title">{expertise.title}</h1>
+                    <p className="Expertise_Page_Description">{expertise.description}</p>
 
                     {expertise.subitems && (
                         <div className="Expertise_SubItems_List">
