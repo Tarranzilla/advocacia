@@ -65,6 +65,7 @@ export default function ImageSlider({ content }: ImageSliderProps) {
 
                                 <Link href={`https://wa.me/1234567890?text=${toUrlValidString(message)}`} className="Banner_Action_Btn">
                                     Agende uma Consulta
+                                    <span className="material-icons">event_available</span>
                                 </Link>
 
                                 <Image

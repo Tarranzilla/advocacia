@@ -22,13 +22,13 @@ export default function Navbar() {
                         <Link className="Navbar_Link" href="/#">
                             Início
                         </Link>
-                        <Link className="Navbar_Link" href="/#about_us">
+                        <Link className="Navbar_Link" href="/#quem-somos">
                             Quem Somos
                         </Link>
-                        <Link className="Navbar_Link" href="/#expertise">
+                        <Link className="Navbar_Link" href="/#areas-de-atuacao">
                             Áreas de Atuação
                         </Link>
-                        <Link className="Navbar_Link" href="/#contact">
+                        <Link className="Navbar_Link" href="/#contato">
                             Contato
                         </Link>
                     </div>
@@ -68,7 +68,7 @@ export default function Navbar() {
                                 onClick={() => {
                                     setMenuOpen(!menuOpen);
                                 }}
-                                href="/#about_us"
+                                href="/#quem-somos"
                             >
                                 Quem Somos
                             </Link>
@@ -76,7 +76,7 @@ export default function Navbar() {
                                 onClick={() => {
                                     setMenuOpen(!menuOpen);
                                 }}
-                                href="/#expertise"
+                                href="/#areas-de-atuacao"
                             >
                                 Areas de Atuação
                             </Link>
@@ -84,7 +84,7 @@ export default function Navbar() {
                                 onClick={() => {
                                     setMenuOpen(!menuOpen);
                                 }}
-                                href="/#contact"
+                                href="/#contato"
                             >
                                 Contato
                             </Link>

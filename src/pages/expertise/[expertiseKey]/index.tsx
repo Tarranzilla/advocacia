@@ -44,14 +44,22 @@ export default function Expertise() {
                         </div>
                     )}
 
-                    <Link
-                        className="Schedule_Btn"
-                        href={`https://wa.me/1234567890?text=${toUrlValidString(message)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Agende uma Consulta
-                    </Link>
+                    <div className="Expertise_Page_Footer">
+                        <Link className="Schedule_Btn" href={"/#areas-de-atuacao"}>
+                            <span className="material-icons">keyboard_return</span>
+                            Voltar para Áreas de Atuação
+                        </Link>
+
+                        <Link
+                            className="Schedule_Btn"
+                            href={`https://wa.me/1234567890?text=${toUrlValidString(message)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Agende uma Consulta
+                            <span className="material-icons">event_available</span>
+                        </Link>
+                    </div>
                 </main>
             </m.div>
         </>

@@ -437,6 +437,9 @@ body.body-no-scroll {
     text-decoration: none;
     font-weight: 500;
     transition: font-size 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: var(--normal-gap);
 }
 
 .Banner_Action_Btn:focus-within,
@@ -703,6 +706,13 @@ body.body-no-scroll {
     font-size: 1.2rem;
 }
 
+.Expertise_Page_Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--medium-gap);
+}
+
 .Expertise_SubItems_List {
     display: flex;
     flex-direction: column;
@@ -744,8 +754,11 @@ body.body-no-scroll {
     font-weight: 500;
     width: 100%;
     max-width: 30rem;
-    margin-inline: auto;
     transition: background-color 0.3s ease, font-size 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--normal-gap);
 }
 
 .Schedule_Btn:focus-within,
@@ -881,6 +894,10 @@ body.body-no-scroll {
     .Banner_Slide {
         padding: 4rem;
         height: 60vh;
+    }
+
+    .Expertise_Page_Footer {
+        flex-direction: column;
     }
 }
 

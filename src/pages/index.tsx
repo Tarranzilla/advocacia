@@ -14,29 +14,43 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Stresser & Machado | Escritório de Advocacia</title>
-                <meta name="description" content="Advocacia Ágil e Eficaz" />
+                <title>Stresser & Machado | Advocacia e Consultoria</title>
+                <meta
+                    name="description"
+                    content="Escritório de Advocacia em Curitiba liderado por duas advogadas experientes, com vinte anos de atuação no mercado e sólida formação acadêmica. Oferecemos uma ampla gama de serviços jurídicos, incluindo direito civil, criminal, trabalhista, administrativo e tributário, com compromisso de fornecer orientação jurídica confiável e personalizada para atender às necessidades individuais de nossos clientes."
+                />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+                <meta property="og:title" content="Stresser & Machado | Advocacia e Consultoria" />
+                <meta
+                    property="og:description"
+                    content="Escritório de Advocacia em Curitiba liderado por duas advogadas experientes, com vinte anos de atuação no mercado e sólida formação acadêmica. Oferecemos uma ampla gama de serviços jurídicos, incluindo direito civil, criminal, trabalhista, administrativo e tributário, com compromisso de fornecer orientação jurídica confiável e personalizada para atender às necessidades individuais de nossos clientes."
+                />
+                <meta property="og:image" content="https://stresseremachado.vercel.app/brand_imgs/Icone_512.png" />
+                <meta property="og:url" content="https://stresseremachado.vercel.app/" />
+
+                <meta name="author" content="https://pragmata.ninja/"></meta>
+
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} key="home">
                 <main className="Page_Wrapper">
-                    <section id="banner_image">
+                    <section id="inicio">
                         <ImageSlider content={banner_image_list} />
                     </section>
-                    <section id="about_us">
+                    <section id="quem-somos">
                         <div className="About_Container">
                             <h1 className="Section_Title">Quem Somos</h1>
                             <p>
                                 O escritório de advocacia Stresser e Machado é reconhecido pela liderança exemplar de duas advogadas de destaque na
-                                área. Com uma sólida experiência adquirida no serviço público, elas trazem consigo um profundo entendimento das
-                                nuances legais e dos meandros do sistema jurídico. Ao longo de seus vinte anos de atuação no mercado, têm se destacado
-                                pela dedicação incansável em garantir os melhores resultados para seus clientes.
+                                área. Com uma sólida experiência adquirida no serviço público e privado, elas trazem consigo um profundo entendimento
+                                das nuances legais e dos meandros do sistema jurídico. Ao longo de seus vinte anos de atuação no mercado e formação
+                                acadêmica.
                             </p>
                             <p>
-                                Ambas as advogadas possuem expertise em diversas áreas do direito, incluindo direito civil, criminal, trabalhista e
-                                administrativo. Esse amplo conhecimento permite que o escritório ofereça uma gama completa de serviços jurídicos,
-                                atendendo às necessidades variadas e complexas de seus clientes.
+                                Nosso escritório oferece uma ampla gama de serviços jurídicos, cobrindo áreas como direito civil, criminal,
+                                trabalhista, administrativo e tributário. Estamos comprometidos em fornecer orientação jurídica confiável e de alta
+                                qualidade para atender às diversas necessidades de nossos clientes.
                             </p>
                             <p>
                                 Além disso, a abordagem personalizada adotada pelo escritório Stresser e Machado é um diferencial marcante.
@@ -182,13 +196,13 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
-                    <section id="expertise">
+                    <section id="areas-de-atuacao">
                         <div className="Services_Container">
                             <h1 className="Section_Title">Areas de Atuação</h1>
                             <CardGrid content={expertiseList} />
                         </div>
                     </section>
-                    <section id="contact">
+                    <section id="contato">
                         <div className="Contact_Container">
                             <h1 className="Section_Title">Contato</h1>
 
