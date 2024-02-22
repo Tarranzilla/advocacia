@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
 
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import Intro from "@/components/Intro";
 import Cookies from "@/components/Cookies";
@@ -13,6 +14,8 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
             <Analytics />
+            <SpeedInsights />
+
             <Intro />
             <Cookies />
             <Navbar />
