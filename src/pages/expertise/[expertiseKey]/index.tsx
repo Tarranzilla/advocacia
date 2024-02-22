@@ -6,6 +6,8 @@ import expertiseList from "@/content_lists/expertise_list";
 
 import { motion as m, AnimatePresence } from "framer-motion";
 
+import { Expertise_List } from "@/content_lists/expertise_list";
+
 const descriptionMap = {
     direito_do_trabalho: {
         title: "Direito do Trabalho",
@@ -60,16 +62,34 @@ const descriptionMap = {
     // Add more queries and descriptions as needed
 };
 
-export default function Expertise() {
-    const router = useRouter();
-    const { expertiseKey } = router.query;
+export async function getStaticPaths() {
+    const paths = expertiseList.map((expertise) => ({
+        params: { expertiseKey: expertise.key },
+    }));
 
-    // Find the expertise with the matching key
+    return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }: { params: { expertiseKey: string } }) {
+    // Get the data for this page based on params
+    const expertiseKey = params.expertiseKey;
     const expertise = expertiseList.find((expertise) => expertise.key === expertiseKey);
 
-    const message = "Olá gostaria de fazer a cotação de serviços relacionados a " + expertise?.title + ".";
-    const expertiseKeyDescription = router.query.expertiseKey as keyof typeof descriptionMap;
-    const customDescription = descriptionMap[expertiseKeyDescription] || "Default meta description";
+    if (!expertise) {
+        return {
+            notFound: true,
+        };
+    }
+
+    return {
+        props: {
+            expertise,
+        },
+    };
+}
+
+export default function Expertise({ expertise }: { expertise: Expertise_List }) {
+    const message = "Olá, eu gostaria de agendar uma consulta relacionada a " + expertise.title + ".";
 
     function toUrlValidString(str: string) {
         return encodeURIComponent(str);
@@ -79,8 +99,8 @@ export default function Expertise() {
     return (
         <>
             <Head>
-                <title>{"Stresser & Machado | " + customDescription.title}</title>
-                <meta name="description" content={customDescription.description} />
+                <title>{"Stresser & Machado | " + expertise.title}</title>
+                <meta name="description" content={expertise.description} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -89,9 +109,9 @@ export default function Expertise() {
                     <h1 className="Expertise_Page_Title">{expertise?.title}</h1>
                     <p className="Expertise_Page_Description">{expertise?.description}</p>
 
-                    {expertise?.subitems && (
+                    {expertise.subitems && (
                         <div className="Expertise_SubItems_List">
-                            {expertise?.subitems?.map((subitem, index) => (
+                            {expertise.subitems.map((subitem, index) => (
                                 <div className="Expertise_SubItem" key={index}>
                                     <h3 className="SubItem_Title">{subitem.title}</h3>
                                     <p className="SubItem_Description">{subitem.description}</p>
