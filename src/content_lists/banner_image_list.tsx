@@ -45,8 +45,7 @@ const banner_image_list: Image_List[] = [
     {
         key: "banner4",
         title: "Proteja seus Direitos no Trabalho",
-        subtitle:
-            "Garanta um ambiente de trabalho justo e equilibrado. Conte com nossa expertise em Direito Trabalhista para defender seus interesses e garantir seus direitos laborais!",
+        subtitle: "Conte com nossa expertise em Direito Trabalhista para defender seus interesses e garantir seus direitos laborais!",
         imgSrc: "/banner_imgs/banner_trabalhista_001.png",
         size: {
             width: 740,

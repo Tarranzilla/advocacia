@@ -209,16 +209,16 @@ export default function Home() {
                             <div className="Contact_Layout_Container">
                                 <div className="Telephone Contact_Layout_Item">
                                     <h3>Telefone</h3>
-                                    <p>(41) 3335-6000</p>
-                                    <p>(41) 3668-8000</p>
                                     <p>(41) 999 155 252</p>
                                     <p>(41) 991 191 904</p>
+                                    <p>(41) 3333-3333</p>
                                 </div>
 
                                 <div className="Working_Hours Contact_Layout_Item">
                                     <h3>Email</h3>
-                                    <p>telma@stresseremachado.adv.br</p>
                                     <p>fran@stressermachado.adv.br</p>
+                                    <p>telma@stresseremachado.adv.br</p>
+                                    <p>contato@stresseremachado.adv.br</p>
                                 </div>
 
                                 <div className="Working_Hours Contact_Layout_Item">
