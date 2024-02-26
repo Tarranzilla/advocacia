@@ -1,11 +1,21 @@
 import Link from "next/link";
 
+import { useRouter } from "next/router";
+
 export default function Footer() {
+    const router = useRouter();
     const message = "Olá, eu gostaria de agendar uma consulta.";
 
     function toUrlValidString(str: string) {
         return encodeURIComponent(str);
     }
+
+    const changeLanguage = () => {
+        const currentLocale = router.locale;
+        const newLocale = currentLocale === "en" ? "pt-BR" : "en";
+        const currentPath = router.asPath;
+        router.push(currentPath, currentPath, { locale: newLocale });
+    };
 
     return (
         <div className="Footer">
@@ -20,6 +30,9 @@ export default function Footer() {
                         <Link href="/termos-de-uso">
                             <span className="Footer_Icon material-icons">sticky_note_2</span>
                         </Link>
+                    </div>
+                    <div className="Footer_Btn Lang_Btn" title="Idioma" onClick={changeLanguage}>
+                        <span className="Footer_Icon material-icons">language</span>
                     </div>
                 </div>
 

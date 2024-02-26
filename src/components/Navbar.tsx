@@ -4,9 +4,12 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion as m, AnimatePresence } from "framer-motion";
 
+import { useSimpleTranslation } from "@/international/useSimpleTranslation";
+
 import Menu from "./Menu";
 
 export default function Navbar() {
+    const t = useSimpleTranslation();
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
@@ -19,18 +22,14 @@ export default function Navbar() {
                     <h1 className="Logo_Type">STRESSER & MACHADO</h1>
 
                     <div className="Navbar_Links Desktop_Only">
-                        <Link className="Navbar_Link" href="/#">
-                            Início
-                        </Link>
-                        <Link className="Navbar_Link" href="/#quem-somos">
-                            Quem Somos
-                        </Link>
-                        <Link className="Navbar_Link" href="/#areas-de-atuacao">
-                            Áreas de Atuação
-                        </Link>
-                        <Link className="Navbar_Link" href="/#contato">
-                            Contato
-                        </Link>
+                        {t.navbar.navLinks &&
+                            t.navbar.navLinks.map((link, index) => {
+                                return (
+                                    <Link key={index} className="Navbar_Link" href={link.path}>
+                                        {link.name}
+                                    </Link>
+                                );
+                            })}
                     </div>
 
                     <div className="Menu_Container Mobile_Only">

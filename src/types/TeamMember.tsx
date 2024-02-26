@@ -4,6 +4,7 @@ export type TeamMember = {
     name: string;
     role: string;
     OAB_number: string;
+    OAB_Link: string;
     picture: string;
 
     cellphone: string;

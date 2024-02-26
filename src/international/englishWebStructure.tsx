@@ -1,8 +1,8 @@
 import { WebStructure } from "@/types/WebStructure";
 
-import teamList from "@/content_lists/team_list";
-import expertiseList from "@/content_lists/expertise_list";
-import bannerList from "@/content_lists/banner_list";
+import teamList_EN from "@/content_lists/english/team_list_en";
+import expertiseList_EN from "@/content_lists/english/expertise_list_en";
+import bannerList_EN from "@/content_lists/english/banner_list_en";
 import privacyList from "@/content_lists/privacy_list";
 import termsList from "@/content_lists/terms_list";
 
@@ -92,7 +92,7 @@ const englishWebStructure: WebStructure = {
                     label: "Schedule an Appointment",
                 },
 
-                bannerList: bannerList,
+                bannerList: bannerList_EN,
             },
             about: {
                 key: "quem-somos",
@@ -108,13 +108,13 @@ const englishWebStructure: WebStructure = {
             team: {
                 key: "equipe",
                 title: "Our Team",
-                members: teamList,
+                members: teamList_EN,
             },
 
             expertise: {
                 key: "areas-de-atuacao",
                 title: "Areas of Expertise",
-                expertiseList: expertiseList,
+                expertiseList: expertiseList_EN,
             },
 
             contact: {
@@ -128,7 +128,7 @@ const englishWebStructure: WebStructure = {
 
                 adress: {
                     key: "endereco",
-                    title: "Adress",
+                    title: "Address",
                     adress: "Avenida Manoel Ribas, nº 507 - Sala 05 - Mercês Curitiba - PR 80510-346 Brazil",
                 },
             },

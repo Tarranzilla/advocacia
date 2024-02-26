@@ -4,12 +4,12 @@ import { WebStructure } from "@/types/WebStructure";
 import portugueseWebStructure from "./portugueseWebStructure";
 import englishWebStructure from "./englishWebStructure";
 
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
 // import { setActiveLanguage } from "@/store/slices/interfaceSlice";
 import { useMemo } from "react";
 
 export function useSimpleTranslation(): WebStructure {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     const router = useRouter();
     const { locale } = router;
 
@@ -18,15 +18,13 @@ export function useSimpleTranslation(): WebStructure {
         if (locale === "pt-BR" || locale === "pt") {
             defaultLang = portugueseWebStructure;
             // dispatch(setActiveLanguage("pt-BR"));
-            console.log(locale);
             console.log("Lang: pt-BR");
         } else {
             // dispatch(setActiveLanguage("en"));
-            console.log(locale);
             console.log("Lang: en");
         }
         return defaultLang;
-    }, [locale, dispatch]);
+    }, [locale]);
 
     return t;
 }

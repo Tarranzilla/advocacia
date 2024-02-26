@@ -2,10 +2,11 @@ import { TeamMember } from "@/types/TeamMember";
 
 const teamList: TeamMember[] = [
     {
-        picture: "/images/team/advogada.jpg",
+        picture: "/team_imgs/advogada_001.png",
         name: "Telma Regina Machado",
         role: "Advogada e Gestora",
         OAB_number: "OAB/PR | 60235",
+        OAB_Link: "https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=60235&tpinsc=A",
         cellphone: "(41) 991 191 904",
         telephone: "(41) 3668-8000",
         email: "telma@stresseremachado.adv.br",
@@ -38,10 +39,11 @@ const teamList: TeamMember[] = [
     },
 
     {
-        picture: "/images/team/advogada.jpg",
+        picture: "/team_imgs/advogada_002.png",
         name: "Franchielle Stresser Gioppo",
         role: "Advogada e Gestora",
         OAB_number: "OAB/PR | 46290",
+        OAB_Link: "https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=46290&tpinsc=A",
         cellphone: "(41) 999 155 252",
         telephone: "(41) 3335-6000",
         email: "fran@stressermachado.adv.br",

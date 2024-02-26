@@ -848,6 +848,7 @@ body.body-no-scroll {
 .Footer_Btn > * {
     text-decoration: none;
     color: var(--text-color);
+    cursor: pointer;
 }
 
 .Footer_Icon {

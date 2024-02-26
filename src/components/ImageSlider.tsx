@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Image_List } from "@/content_lists/banner_list";
+import Banner from "@/types/Banner";
 import { motion as m, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { useSimpleTranslation } from "@/international/useSimpleTranslation";
 
 type ImageSliderProps = {
-    content: Image_List[];
+    content: Banner[];
 };
 
 export default function ImageSlider({ content }: ImageSliderProps) {
+    const t = useSimpleTranslation();
+
     const [activeIndex, setActiveIndex] = useState(0);
     const [isPlaying, setIsPlaying] = useState(true);
 
@@ -64,7 +67,7 @@ export default function ImageSlider({ content }: ImageSliderProps) {
                                 <h3 className="Banner_SubTitle">{contentItem.subtitle}</h3>
 
                                 <Link href={`https://wa.me/1234567890?text=${toUrlValidString(message)}`} className="Banner_Action_Btn">
-                                    Agende uma Consulta
+                                    {t.landingPage.sections.home.scheduleBtn.title}
                                     <span className="material-icons">event_available</span>
                                 </Link>
 
