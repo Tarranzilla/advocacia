@@ -1,17 +1,6 @@
-export type Image_List = {
-    key: string;
-    title: string;
-    subtitle: string;
-    actionBtn?: string;
-    actionBtnLink?: string;
-    imgSrc: string;
-    size: {
-        width: number;
-        height: number;
-    };
-};
+import Banner from "@/types/Banner";
 
-const banner_image_list: Image_List[] = [
+const bannerList: Banner[] = [
     {
         key: "banner1",
         title: "Maximize sua Aposentadoria",
@@ -54,4 +43,4 @@ const banner_image_list: Image_List[] = [
     },
 ];
 
-export default banner_image_list;
+export default bannerList;

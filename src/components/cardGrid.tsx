@@ -1,9 +1,9 @@
-import { Expertise_List } from "@/content_lists/expertise_list";
+import { Expertise } from "@/types/Expertise";
 import Image from "next/image";
 import Link from "next/link";
 
 type CardGridProps = {
-    content: Expertise_List[];
+    content: Expertise[];
 };
 
 export default function CardGrid({ content }: CardGridProps) {

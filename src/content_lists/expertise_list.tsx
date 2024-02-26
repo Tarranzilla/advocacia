@@ -1,31 +1,6 @@
-export type Expertise_List = {
-    key: string;
-    title: string;
-    description: string;
-    metadescription: string;
-    imgSrc: string;
-    size: {
-        width: number;
-        height: number;
-    };
-    pageLink: string;
-    subitems?: Expertise_Subitem[];
-};
+import { Expertise } from "@/types/Expertise";
 
-export type Expertise_Subitem = {
-    key: string;
-    title: string;
-    description: string;
-    metadescription?: string;
-    imgSrc?: string;
-    size?: {
-        width: number;
-        height: number;
-    };
-    pageLink?: string;
-};
-
-export const expertiseList: Expertise_List[] = [
+export const expertiseList: Expertise[] = [
     {
         key: "direito_do_trabalho",
         title: "Direito do Trabalho",

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Image_List } from "@/content_lists/banner_image_list";
+import { Image_List } from "@/content_lists/banner_list";
 import { motion as m, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 

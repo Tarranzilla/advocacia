@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-import banner_image_list from "@/content_lists/banner_image_list";
+import bannerList from "@/content_lists/banner_list";
 import expertiseList from "@/content_lists/expertise_list";
 
 import ImageSlider from "@/components/ImageSlider";
@@ -36,7 +36,7 @@ export default function Home() {
             <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} key="home">
                 <main className="Page_Wrapper">
                     <section id="inicio">
-                        <ImageSlider content={banner_image_list} />
+                        <ImageSlider content={bannerList} />
                     </section>
                     <section id="quem-somos">
                         <div className="About_Container">

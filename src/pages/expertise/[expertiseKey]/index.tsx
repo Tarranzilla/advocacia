@@ -6,7 +6,7 @@ import expertiseList from "@/content_lists/expertise_list";
 
 import { motion as m, AnimatePresence } from "framer-motion";
 
-import { Expertise_List } from "@/content_lists/expertise_list";
+import { Expertise } from "@/types/Expertise";
 
 const descriptionMap = {
     direito_do_trabalho: {
@@ -88,7 +88,7 @@ export async function getStaticProps({ params }: { params: { expertiseKey: strin
     };
 }
 
-export default function Expertise({ expertise }: { expertise: Expertise_List }) {
+export default function ExpertiseDetail({ expertise }: { expertise: Expertise }) {
     const message = "Olá, eu gostaria de agendar uma consulta relacionada a " + expertise.title + ".";
 
     function toUrlValidString(str: string) {
