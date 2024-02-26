@@ -3,79 +3,56 @@ import Head from "next/head";
 import Link from "next/link";
 
 import expertiseList from "@/content_lists/expertise_list";
+import expertiseList_EN from "@/content_lists/english/expertise_list_en";
+
+import { useSimpleTranslation } from "@/international/useSimpleTranslation";
+
+import { GetStaticPathsContext } from "next";
 
 import { motion as m, AnimatePresence } from "framer-motion";
 
 import { Expertise } from "@/types/Expertise";
 
-const descriptionMap = {
-    direito_do_trabalho: {
-        title: "Direito do Trabalho",
-        description:
-            "Oferecemos orientação jurídica confiável e ágil para empregadores e empregados, abordando questões como contratos, demissões, rescisões e direitos trabalhistas.",
-    },
-    direito_previdenciario: {
-        title: "Direito Previdenciário",
-        description:
-            "Com expertise em Direito Previdenciário, nosso escritório fornece assistência abrangente em questões relacionadas à Previdência Social, incluindo aposentadorias, benefícios por incapacidade, pensões e revisões de benefícios.",
-    },
-    direito_tributario: {
-        title: "Direito Tributário",
-        description:
-            "Especializados em Direito Tributário, oferecemos suporte legal em questões fiscais, incluindo planejamento tributário, contestação de autuações, recuperação de tributos e defesa em processos administrativos e judiciais.",
-    },
-    direito_civil: {
-        title: "Direito Civil",
-        description:
-            "Com vasta experiência em Direito Civil, nossa equipe oferece assistência em diversas áreas, como contratos, responsabilidade civil, direitos reais, sucessões, obrigações e questões relacionadas à propriedade.",
-    },
-    direito_familia: {
-        title: "Direito de Família",
-        description:
-            "Especializados em Direito de Família, prestamos suporte legal em questões como divórcio, pensão alimentícia, guarda de filhos, inventários, adoções, investigação de paternidade e outras questões familiares delicadas.",
-    },
-    direito_sucessoes: {
-        title: "Direito das Sucessões",
-        description:
-            "Com expertise em Direito das Sucessões, oferecemos assistência em processos de inventário, partilha de bens, testamentos, planejamento sucessório e questões relacionadas à herança e patrimônio.",
-    },
-    direito_imobiliario: {
-        title: "Direito Imobiliário",
-        description:
-            "Fornecemos suporte legal em transações imobiliárias, contratos de locação, regularização de propriedades, litígios envolvendo imóveis, condomínios e questões relacionadas ao direito de propriedade.",
-    },
-    direito_empresarial: {
-        title: "Direito Empresarial",
-        description:
-            "Prestamos suporte jurídico a empresas em questões como constituição e dissolução de sociedades, contratos comerciais, recuperação judicial, falência, propriedade intelectual e questões societárias.",
-    },
-    direito_agronegocio: {
-        title: "Direito do Agronegócio",
-        description:
-            "Oferecemos suporte jurídico para empresas e produtores rurais em questões como contratos agrícolas, regularização fundiária, licenciamento ambiental, financiamento agrícola e litígios relacionados ao setor agropecuário.",
-    },
-    direito_bancario: {
-        title: "Direito Bancário",
-        description:
-            "Oferecemos assistência jurídica em questões como contratos bancários, financiamentos, cobranças, defesa do consumidor bancário, disputas contratuais e litígios com instituições financeiras.",
-    },
-    // Add more queries and descriptions as needed
-};
+export async function getStaticPaths(context: GetStaticPathsContext) {
+    const locales = context.locales || ["pt-BR", "en"]; // Default to your known locales if none are provided
+    const paths = locales.flatMap((locale) => {
+        const list = locale === "pt-BR" ? expertiseList : expertiseList_EN;
+        return list.map((expertise) => ({
+            params: { locale, expertiseKey: expertise.key },
+        }));
+    });
 
-export async function getStaticPaths() {
-    const paths = expertiseList.map((expertise) => ({
-        params: { expertiseKey: expertise.key },
-    }));
+    // Log the paths
+    console.log("paths:", paths);
 
-    return { paths, fallback: false };
+    return { paths, fallback: true };
 }
 
-export async function getStaticProps({ params }: { params: { expertiseKey: string } }) {
+export async function getStaticProps({ params, locale }: { params: { expertiseKey: string }; locale: string }) {
+    console.log(`getStaticProps called for locale: ${locale}, expertiseKey: ${params.expertiseKey}`);
+
+    // Log the params and locale
+    console.log("params:", params);
+    console.log("locale:", locale);
+
     // Get the data for this page based on params
     const expertiseKey = params.expertiseKey;
-    const expertise = expertiseList.find((expertise) => expertise.key === expertiseKey);
+    const list = locale === "pt-BR" ? expertiseList : expertiseList_EN;
+    console.log("expertiseKey:", expertiseKey);
+
+    //tests
+
+    // Log the expertise lists
+    console.log("expertiseList:", expertiseList);
+    console.log("expertiseList_EN:", expertiseList_EN);
+
+    const expertise = list.find((expertise) => expertise.key === expertiseKey);
+
+    // Log the expertise
+    console.log("expertise:", expertise);
 
     if (!expertise) {
+        console.log("expertise not found");
         return {
             notFound: true,
         };
@@ -89,6 +66,13 @@ export async function getStaticProps({ params }: { params: { expertiseKey: strin
 }
 
 export default function ExpertiseDetail({ expertise }: { expertise: Expertise }) {
+    const router = useRouter();
+
+    if (router.isFallback) {
+        return <div>Loading...</div>;
+    }
+
+    console.log("expertise client:", expertise);
     const message = "Olá, eu gostaria de agendar uma consulta relacionada a " + expertise.title + ".";
 
     function toUrlValidString(str: string) {
