@@ -586,7 +586,7 @@ body.body-no-scroll {
 .Team_Member_Name {
     padding-bottom: var(--normal-gap);
     border-bottom: 1px solid var(--text-color);
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
 
 .Team_Member_Info {

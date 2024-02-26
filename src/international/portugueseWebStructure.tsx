@@ -121,6 +121,10 @@ const portugueseWebStructure: WebStructure = {
                 key: "contato",
                 title: "Contato",
 
+                telephone: {
+                    title: "Telefone",
+                },
+
                 functioningHours: {
                     title: "Horário de Funcionamento",
                     schedule: "Segunda a Sexta: 09:00 - 12:00 | 13:00 - 18:00",

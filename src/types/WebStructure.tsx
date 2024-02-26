@@ -139,6 +139,10 @@ export type WebStructure = {
                 key: string;
                 title: string;
 
+                telephone: {
+                    title: string;
+                };
+
                 functioningHours: {
                     title: string;
                     schedule: string;

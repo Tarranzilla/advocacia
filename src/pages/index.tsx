@@ -147,7 +147,7 @@ export default function Home() {
 
                             <div className="Contact_Layout_Container">
                                 <div className="Telephone Contact_Layout_Item" key={"contato_telefone"}>
-                                    <h3>Telefone</h3>
+                                    <h3>{t.landingPage.sections.contact.telephone.title}</h3>
                                     <p>(41) 999 155 252</p>
                                     <p>(41) 991 191 904</p>
                                     <p>(41) 3333-3333</p>
