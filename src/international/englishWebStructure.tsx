@@ -3,8 +3,8 @@ import { WebStructure } from "@/types/WebStructure";
 import teamList_EN from "@/content_lists/english/team_list_en";
 import expertiseList_EN from "@/content_lists/english/expertise_list_en";
 import bannerList_EN from "@/content_lists/english/banner_list_en";
-import privacyList from "@/content_lists/privacy_list";
-import termsList from "@/content_lists/terms_list";
+import privacyList_EN from "@/content_lists/english/privacy_list_en";
+import termsList_EN from "@/content_lists/english/terms_list_en";
 
 const englishWebStructure: WebStructure = {
     common: {},
@@ -75,11 +75,11 @@ const englishWebStructure: WebStructure = {
     },
     privacy: {
         title: "Privacy Policy",
-        paragraphs: privacyList,
+        paragraphs: privacyList_EN,
     },
     terms: {
         title: "Terms of Use",
-        paragraphs: termsList,
+        paragraphs: termsList_EN,
     },
     landingPage: {
         sections: {

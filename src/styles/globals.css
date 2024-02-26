@@ -630,8 +630,11 @@ body.body-no-scroll {
     gap: var(--large-gap);
 }
 
-.Team_Member_Description > h3 {
-    margin-bottom: -1rem;
+.Team_Member_AcademicBackground > h3,
+.Team_Member_AcademicProduction > h3,
+.Team_Member_ComplementaryEducation > h3,
+.Team_Member_ProfessionalExperience > h3 {
+    margin-bottom: 0.5rem;
 }
 
 /* ATUAÇÃO  */

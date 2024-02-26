@@ -12,7 +12,7 @@ export const expertiseList_EN: Expertise[] = [
             width: 740,
             height: 420,
         },
-        pageLink: "/expertise/labor_law",
+        pageLink: "/expertise/direito_do_trabalho",
         subitems: [
             {
                 key: "legislacao_trabalhista",
@@ -58,7 +58,7 @@ export const expertiseList_EN: Expertise[] = [
         metadescription:
             "With expertise in Social Security Law, our office provides comprehensive assistance in matters related to Social Security, including retirements, disability benefits, pensions, and benefit reviews.",
         imgSrc: "/expertise_imgs/direito_previdenciario_001.png",
-        pageLink: "/expertise/social_security_law",
+        pageLink: "/expertise/direito_previdenciario",
         size: {
             width: 300,
             height: 200,
@@ -93,7 +93,7 @@ export const expertiseList_EN: Expertise[] = [
         metadescription:
             "Specialized in Tax Law, we provide legal support in tax matters, including tax planning, contestation of assessments, tax recovery, and defense in administrative and judicial proceedings.",
         imgSrc: "/expertise_imgs/direito_tributario_001.png",
-        pageLink: "/expertise/tax_law",
+        pageLink: "/expertise/direito_tributario",
         size: {
             width: 300,
             height: 200,
@@ -133,7 +133,7 @@ export const expertiseList_EN: Expertise[] = [
         metadescription:
             "With vast experience in Civil Law, our team provides assistance in various areas, such as contracts, civil liability, real rights, successions, obligations, and property-related issues.",
         imgSrc: "/expertise_imgs/direito_civil_001.png",
-        pageLink: "/expertise/civil_law",
+        pageLink: "/expertise/direito_civil",
         size: {
             width: 300,
             height: 200,
@@ -188,7 +188,7 @@ export const expertiseList_EN: Expertise[] = [
         metadescription:
             "Specializing in Family Law, we provide legal support in matters such as divorce, alimony, child custody, inheritance, adoptions, paternity investigation, and other delicate family issues.",
         imgSrc: "/expertise_imgs/direito_familia_002.png",
-        pageLink: "/expertise/family_law",
+        pageLink: "/expertise/direito_familia",
         size: {
             width: 300,
             height: 200,
@@ -240,7 +240,7 @@ export const expertiseList_EN: Expertise[] = [
         metadescription:
             "With expertise in Succession Law, we provide assistance in probate processes, asset distribution, wills, estate planning, and issues related to inheritance and estate.",
         imgSrc: "/expertise_imgs/direito_sucessao_001.png",
-        pageLink: "/expertise/succession_law",
+        pageLink: "/expertise/direito_sucessoes",
         size: {
             width: 300,
             height: 200,
@@ -280,7 +280,7 @@ export const expertiseList_EN: Expertise[] = [
         metadescription:
             "We provide legal support in real estate transactions, lease agreements, property regularization, disputes involving real estate, condominiums, and issues related to property rights.",
         imgSrc: "/expertise_imgs/direito_imobiliario_001.png",
-        pageLink: "/expertise/real_estate_law",
+        pageLink: "/expertise/direito_imobiliario",
         size: {
             width: 300,
             height: 200,
@@ -327,7 +327,7 @@ export const expertiseList_EN: Expertise[] = [
         metadescription:
             "We provide legal support to companies in matters such as the formation and dissolution of partnerships, commercial contracts, judicial recovery, bankruptcy, intellectual property, and corporate issues.",
         imgSrc: "/expertise_imgs/direito_administrativo_001.png",
-        pageLink: "/expertise/business_law",
+        pageLink: "/expertise/direito_empresarial",
         size: {
             width: 300,
             height: 200,
@@ -363,7 +363,7 @@ export const expertiseList_EN: Expertise[] = [
         metadescription:
             "We provide legal support to companies and rural producers on issues such as agricultural contracts, land regularization, environmental licensing, agricultural financing, and disputes related to the agricultural sector.",
         imgSrc: "/expertise_imgs/direito_agronegocio_001.png",
-        pageLink: "/expertise/agribusiness_law",
+        pageLink: "/expertise/direito_agronegocio",
         size: {
             width: 300,
             height: 200,
@@ -394,7 +394,7 @@ export const expertiseList_EN: Expertise[] = [
         metadescription:
             "We provide legal assistance on issues such as banking contracts, loans, collections, consumer banking defense, contractual disputes, and litigation with financial institutions.",
         imgSrc: "/expertise_imgs/direito_bancario_001.png",
-        pageLink: "/expertise/banking_law",
+        pageLink: "/expertise/direito_bancario",
         size: {
             width: 300,
             height: 200,
