@@ -64,7 +64,7 @@ export default function ImageSlider({ content }: ImageSliderProps) {
                             >
                                 <div className="Banner_Top_Fader"></div>
                                 <h1 className="Banner_Title">{contentItem.title}</h1>
-                                <h3 className="Banner_SubTitle">{contentItem.subtitle}</h3>
+                                <h2 className="Banner_SubTitle">{contentItem.subtitle}</h2>
 
                                 <Link href={`https://wa.me/1234567890?text=${toUrlValidString(message)}`} className="Banner_Action_Btn">
                                     {t.landingPage.sections.home.scheduleBtn.title}

@@ -52,7 +52,7 @@ export default function Home() {
                                         <div className="Team_Member_Header">
                                             <Image src={member.picture} alt={member.name} width={200} height={300} />
                                             <div className="Team_Member_Info">
-                                                <h3 className="Team_Member_Name">{member.name}</h3>
+                                                <h2 className="Team_Member_Name">{member.name}</h2>
 
                                                 <Link
                                                     href={member.OAB_Link}
@@ -127,17 +127,17 @@ export default function Home() {
                     </section>
                     <section id="areas-de-atuacao" key={"areas-de-atuacao"}>
                         <div className="Services_Container">
-                            <h1 className="Section_Title" key={t.landingPage.sections.expertise.title}>
+                            <h2 className="Section_Title" key={t.landingPage.sections.expertise.title}>
                                 {t.landingPage.sections.expertise.title}
-                            </h1>
+                            </h2>
                             <CardGrid content={t.landingPage.sections.expertise.expertiseList} />
                         </div>
                     </section>
                     <section id="contato" key={"contato"}>
                         <div className="Contact_Container">
-                            <h1 className="Section_Title" key={t.landingPage.sections.contact.title}>
+                            <h2 className="Section_Title" key={t.landingPage.sections.contact.title}>
                                 {t.landingPage.sections.contact.title}
-                            </h1>
+                            </h2>
 
                             <div className="Contact_Layout_Container">
                                 <div className="Telephone Contact_Layout_Item" key={"contato_telefone"}>
