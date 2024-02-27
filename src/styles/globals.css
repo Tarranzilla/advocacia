@@ -231,7 +231,7 @@ body.body-no-scroll {
     gap: var(--medium-gap);
     padding: var(--medium-gap);
     height: var(--Navbar-height);
-    z-index: 3;
+    z-index: 4;
     background-color: var(--bg-color-faded-50);
     backdrop-filter: blur(5px);
     text-align: center;
@@ -285,6 +285,17 @@ body.body-no-scroll {
 
 .Menu_Container {
     margin-left: auto;
+    cursor: pointer;
+}
+
+.Menu_Container > * {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.Menu_Container:focus-within > *,
+.Menu_Container:hover > * {
+    transform: scale(1.2);
+    color: white;
 }
 
 .Page_Wrapper {
@@ -331,6 +342,14 @@ body.body-no-scroll {
     text-decoration: none;
     border-bottom: 1px solid var(--text-color);
     padding-bottom: var(--normal-gap);
+    transition: scale 0.3s ease, color 0.3s ease;
+}
+
+.Menu_Nav > a:hover,
+.Menu_Nav > a:focus-within {
+    color: white;
+    scale: 1.1;
+    border-bottom: 1px solid white;
 }
 
 .Search_Bar {
@@ -792,12 +811,14 @@ body.body-no-scroll {
     flex-wrap: wrap;
 }
 
+.Contact_Layout_Item_Title {
+    margin-bottom: var(--small-gap);
+}
+
 .Adress_Item {
     display: flex;
     flex-direction: column;
-    gap: var(--small-gap);
     padding-bottom: var(--normal-gap);
-    border-bottom: 1px solid var(--text-color);
 }
 
 .Adress_Title {
@@ -805,6 +826,9 @@ body.body-no-scroll {
     font-family: "Willpower Slab Regular", sans-serif;
     letter-spacing: 0.25rem;
     font-size: 2rem;
+    padding-bottom: var(--medium-gap);
+    margin-bottom: var(--medium-gap);
+    border-bottom: 1px solid var(--text-color);
 }
 
 .Map {
@@ -854,15 +878,40 @@ body.body-no-scroll {
     cursor: pointer;
 }
 
+.Lang_Btn {
+    display: flex;
+    align-items: center;
+    gap: var(--normal-gap);
+    padding-block: var(--small-gap);
+}
+
+.Lang_Btn > p {
+    font-size: 1rem;
+    transition: scale 0.3s ease, color 0.3s ease, padding 0.3s ease;
+}
+
 .Footer_Icon {
     color: var(--text-color);
-    transition: font-size 0.3s ease, color 0.3s ease;
+    transition: font-size 0.3s ease, color 0.3s ease, scale 0.3s ease;
 }
 
 .Footer_Icon:focus-within,
 .Footer_Icon:hover {
     font-size: 1.8rem;
     color: white;
+}
+
+.Lang_Btn:hover > p,
+.Lang_Btn:focus-within > p {
+    color: white;
+    scale: 1.1;
+    padding-left: var(--normal-gap);
+}
+
+.Lang_Btn:hover > .Footer_Icon,
+.Lang_Btn:focus-within > .Footer_Icon {
+    color: white;
+    scale: 1.1;
 }
 
 /* MEDIA QUERIES */

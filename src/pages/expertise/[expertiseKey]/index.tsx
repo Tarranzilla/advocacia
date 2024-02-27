@@ -71,6 +71,7 @@ export async function getStaticProps({ params, locale }: { params: { expertiseKe
 
 export default function ExpertiseDetail({ expertise }: { expertise: Expertise }) {
     const router = useRouter();
+    const t = useSimpleTranslation();
 
     if (router.isFallback) {
         return <div>Loading...</div>;
@@ -111,7 +112,7 @@ export default function ExpertiseDetail({ expertise }: { expertise: Expertise })
                     <div className="Expertise_Page_Footer">
                         <Link className="Schedule_Btn" href={"/#areas-de-atuacao"}>
                             <span className="material-icons">keyboard_return</span>
-                            Voltar para Áreas de Atuação
+                            {t.common.returnToAreasOfExpertise}
                         </Link>
 
                         <Link
@@ -120,7 +121,7 @@ export default function ExpertiseDetail({ expertise }: { expertise: Expertise })
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Agende uma Consulta
+                            {t.common.customScheduleText}
                             <span className="material-icons">event_available</span>
                         </Link>
                     </div>

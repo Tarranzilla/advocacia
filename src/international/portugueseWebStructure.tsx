@@ -7,7 +7,14 @@ import privacyList from "@/content_lists/privacy_list";
 import termsList from "@/content_lists/terms_list";
 
 const portugueseWebStructure: WebStructure = {
-    common: {},
+    common: {
+        customScheduleText: "Agende uma Consulta",
+        returnToAreasOfExpertise: "Voltar para Áreas de Atuação",
+        customTitle: "Stresser & Machado | Advocacia e Consultoria",
+        customDescription:
+            "Escritório de Advocacia em Curitiba liderado por duas advogadas experientes, com vinte anos de atuação no mercado e sólida formação acadêmica. Oferecemos uma ampla gama de serviços jurídicos, incluindo direito civil, criminal, trabalhista, administrativo e tributário, com compromisso de fornecer orientação jurídica confiável e personalizada para atender às necessidades individuais de nossos clientes.",
+        customWebsiteURL: "https://www.stresseremachado.adv.br",
+    },
     navbar: {
         logo: {
             pathURL: "/brand_imgs/Logo_Orange.png",

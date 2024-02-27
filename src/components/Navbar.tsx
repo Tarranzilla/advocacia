@@ -5,12 +5,19 @@ import { useState } from "react";
 import { motion as m, AnimatePresence } from "framer-motion";
 
 import { useSimpleTranslation } from "@/international/useSimpleTranslation";
-
-import Menu from "./Menu";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
+    const router = useRouter();
     const t = useSimpleTranslation();
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const changeLanguage = () => {
+        const currentLocale = router.locale;
+        const newLocale = currentLocale === "en" ? "pt-BR" : "en";
+        const currentPath = router.asPath;
+        router.push(currentPath, currentPath, { locale: newLocale });
+    };
 
     return (
         <>
@@ -54,55 +61,28 @@ export default function Navbar() {
                                 <span className="material-icons">search</span>
                             </button>
                         </div>
+
                         <div className="Menu_Nav">
-                            <Link
-                                onClick={() => {
-                                    setMenuOpen(!menuOpen);
-                                }}
-                                href="/#"
-                            >
-                                Início
-                            </Link>
-                            <Link
-                                onClick={() => {
-                                    setMenuOpen(!menuOpen);
-                                }}
-                                href="/#quem-somos"
-                            >
-                                Quem Somos
-                            </Link>
-                            <Link
-                                onClick={() => {
-                                    setMenuOpen(!menuOpen);
-                                }}
-                                href="/#areas-de-atuacao"
-                            >
-                                Areas de Atuação
-                            </Link>
-                            <Link
-                                onClick={() => {
-                                    setMenuOpen(!menuOpen);
-                                }}
-                                href="/#contato"
-                            >
-                                Contato
-                            </Link>
-                            <Link
-                                onClick={() => {
-                                    setMenuOpen(!menuOpen);
-                                }}
-                                href="/privacidade"
-                            >
-                                Privacidade
-                            </Link>
-                            <Link
-                                onClick={() => {
-                                    setMenuOpen(!menuOpen);
-                                }}
-                                href="/termos-de-uso"
-                            >
-                                Termos de Uso
-                            </Link>
+                            {t.menu.links &&
+                                t.menu.links.map((link, index) => {
+                                    return (
+                                        <Link
+                                            key={index}
+                                            className=""
+                                            href={link.path}
+                                            onClick={() => {
+                                                setMenuOpen(false);
+                                            }}
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    );
+                                })}
+                        </div>
+
+                        <div className="Footer_Btn Lang_Btn" title={t.footer.langBtn?.label} onClick={changeLanguage}>
+                            <span className="Footer_Icon material-icons">language</span>
+                            <p>{t.footer.langBtn?.label}</p>
                         </div>
                     </m.div>
                 )}

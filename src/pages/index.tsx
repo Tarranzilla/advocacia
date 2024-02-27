@@ -15,18 +15,12 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Stresser & Machado | Advocacia e Consultoria</title>
-                <meta
-                    name="description"
-                    content="Escritório de Advocacia em Curitiba liderado por duas advogadas experientes, com vinte anos de atuação no mercado e sólida formação acadêmica. Oferecemos uma ampla gama de serviços jurídicos, incluindo direito civil, criminal, trabalhista, administrativo e tributário, com compromisso de fornecer orientação jurídica confiável e personalizada para atender às necessidades individuais de nossos clientes."
-                />
+                <title>{t.common.customTitle}</title>
+                <meta name="description" content={t.common.customDescription} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-                <meta property="og:title" content="Stresser & Machado | Advocacia e Consultoria" />
-                <meta
-                    property="og:description"
-                    content="Escritório de Advocacia em Curitiba liderado por duas advogadas experientes, com vinte anos de atuação no mercado e sólida formação acadêmica. Oferecemos uma ampla gama de serviços jurídicos, incluindo direito civil, criminal, trabalhista, administrativo e tributário, com compromisso de fornecer orientação jurídica confiável e personalizada para atender às necessidades individuais de nossos clientes."
-                />
+                <meta property="og:title" content={t.common.customTitle} />
+                <meta property="og:description" content={t.common.customDescription} />
                 <meta property="og:image" content="https://stresseremachado.vercel.app/brand_imgs/Icone_512.png" />
                 <meta property="og:url" content="https://stresseremachado.vercel.app/" />
 
@@ -147,21 +141,21 @@ export default function Home() {
 
                             <div className="Contact_Layout_Container">
                                 <div className="Telephone Contact_Layout_Item" key={"contato_telefone"}>
-                                    <h3>{t.landingPage.sections.contact.telephone.title}</h3>
+                                    <h3 className="Contact_Layout_Item_Title">{t.landingPage.sections.contact.telephone.title}</h3>
                                     <p>(41) 999 155 252</p>
                                     <p>(41) 991 191 904</p>
                                     <p>(41) 3333-3333</p>
                                 </div>
 
                                 <div className="Working_Hours Contact_Layout_Item" key={"contato_email"}>
-                                    <h3>Email</h3>
+                                    <h3 className="Contact_Layout_Item_Title">Email</h3>
                                     <p>fran@stressermachado.adv.br</p>
                                     <p>telma@stresseremachado.adv.br</p>
                                     <p>contato@stresseremachado.adv.br</p>
                                 </div>
 
                                 <div className="Working_Hours Contact_Layout_Item">
-                                    <h3 key={t.landingPage.sections.contact.functioningHours.title}>
+                                    <h3 key={t.landingPage.sections.contact.functioningHours.title} className="Contact_Layout_Item_Title">
                                         {t.landingPage.sections.contact.functioningHours.title}
                                     </h3>
                                     <p key={"schedule"}>{t.landingPage.sections.contact.functioningHours.schedule}</p>

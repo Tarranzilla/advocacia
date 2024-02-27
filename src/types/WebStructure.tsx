@@ -27,6 +27,12 @@ export type WebStructure = {
             title: string;
             label: string;
         };
+
+        customScheduleText: string;
+        returnToAreasOfExpertise: string;
+        customTitle: string;
+        customDescription: string;
+        customWebsiteURL: string;
     };
 
     navbar: {
