@@ -916,7 +916,7 @@ body.body-no-scroll {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .Desktop_Only {
         display: none;
     }
@@ -956,7 +956,7 @@ body.body-no-scroll {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
     .Mobile_Only {
         display: none;
     }
