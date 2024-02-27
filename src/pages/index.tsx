@@ -168,6 +168,7 @@ export default function Home() {
                             </div>
 
                             <iframe
+                                title="Mapa de localização do escritório de advocacia Stresser & Machado"
                                 className="Map"
                                 referrerPolicy="no-referrer-when-downgrade"
                                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBoWxQtCEHcm-AqgB3fjGveoXqVgy8g9pI&q=Avenida+Manoel+Ribas,+n%C2%BA+507,+Merc%C3%AAs+Curitiba+-+PR+-+Brasil"
