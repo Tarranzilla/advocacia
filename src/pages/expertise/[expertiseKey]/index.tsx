@@ -13,19 +13,23 @@ import { motion as m, AnimatePresence } from "framer-motion";
 
 import { Expertise } from "@/types/Expertise";
 
-export async function getStaticPaths(context: GetStaticPathsContext) {
-    const locales = context.locales || ["pt-BR", "en"]; // Default to your known locales if none are provided
-    const paths = locales.flatMap((locale) => {
-        const list = locale === "pt-BR" ? expertiseList : expertiseList_EN;
-        return list.map((expertise) => ({
-            params: { locale, expertiseKey: expertise.key },
-        }));
+export async function getStaticPaths() {
+    const paths: { params: { expertiseKey: string }; locale: string }[] = [];
+
+    // Add Portuguese paths
+    expertiseList.forEach((expertise) => {
+        paths.push({ params: { expertiseKey: expertise.key }, locale: "pt-BR" });
     });
 
-    // Log the paths
-    console.log("paths:", paths);
+    // Add English paths
+    expertiseList_EN.forEach((expertise) => {
+        paths.push({ params: { expertiseKey: expertise.key }, locale: "en" });
+    });
 
-    return { paths, fallback: true };
+    return {
+        paths,
+        fallback: true,
+    };
 }
 
 export async function getStaticProps({ params, locale }: { params: { expertiseKey: string }; locale: string }) {
