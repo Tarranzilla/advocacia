@@ -1,4 +1,6 @@
 import ParagraphsWithTitle from "./ParagraphsWithTitle";
+import { AcademicCourse } from "./AcademicCourse";
+import { AcademicCitation } from "./AcademicCitation";
 
 export type TeamMember = {
     name: string;
@@ -12,7 +14,7 @@ export type TeamMember = {
     email: string;
     description: string[];
     professionalExperience?: ParagraphsWithTitle[];
-    complementaryEducation?: ParagraphsWithTitle[];
-    academicBackground?: ParagraphsWithTitle[];
-    academicProduction?: ParagraphsWithTitle[];
+    complementaryEducation?: AcademicCourse[];
+    academicBackground?: AcademicCourse[];
+    academicProduction?: AcademicCitation[];
 };

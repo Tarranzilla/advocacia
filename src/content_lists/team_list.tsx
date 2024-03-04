@@ -19,21 +19,27 @@ const teamList: TeamMember[] = [
 
         academicBackground: [
             {
-                title: "Formação Acadêmica",
-                paragraphs: [
-                    "Especialização em Direito Tributário e Processual Tributário (2012-2013) - Centro Universitário Curitiba. Título: A Simultaneidade Normativa na Isenção Tributária. Orientador: Mauricio Dalri Timm do Valle",
-                    "Graduação em Direito (2006-2011) - Universidade Tuiuti do Paraná. Título: Pedágio - Aspectos Jurídicos, Políticos e Sociais. Orientador: Pericles Coelho",
-                ],
+                course: "Especialização em Direito Tributário e Processual Tributário",
+                date: "2012-2013",
+                institution: "Centro Universitário Curitiba",
+            },
+            {
+                course: "Graduação em Direito",
+                date: "2006-2011",
+                institution: "Universidade Tuiuti do Paraná",
             },
         ],
 
         academicProduction: [
             {
-                title: "Produção Acadêmica",
-                paragraphs: [
-                    "MACHADO, T. R. CONTRIBUIÇÃO SINDICAL E SUA NATUREZA JURÍDICA. 2018. (Apresentação de Trabalho/Congresso)",
-                    "MACHADO, T. R. A Simultaneidade Normativa na Isenção Tributária. 2016. (Apresentação de Trabalho/Congresso)",
-                ],
+                authors: "MACHADO, T. R.",
+                title: "Contribuição Sindical e sua Natureza Jurídica",
+                date: "2018",
+            },
+            {
+                authors: "MACHADO, T. R.",
+                title: "A Simultaneidade Normativa na Isenção Tributária",
+                date: "2016",
             },
         ],
     },
@@ -55,23 +61,34 @@ const teamList: TeamMember[] = [
 
         academicBackground: [
             {
-                title: "Formação Acadêmica",
-                paragraphs: [
-                    "Especialização em Direito Público (2007-2008) - Instituto São Domingos, Orientador: Guilherme da Câmara Silva",
-                    "Graduação em Direito (2002-2007) - Pontifícia Universidade Católica do Paraná, Orientador: José Carlos Santos Gomes",
-                ],
+                course: "Curso em Processo Civil",
+                date: "2018-2019",
+                institution: "Instituto Romeu Felipe Bacellar",
             },
-        ],
-
-        complementaryEducation: [
             {
-                title: "Formação Complementar",
-                paragraphs: [
-                    "Cálculos Trabalhistas (2009) - Escola Superior da Advocacia- OAB/PR",
-                    "Noções Gerais de Direito Previdenciário (2008) - Curso Jurídico - Extensão Universitária do Paraná",
-                    "Curso em direito do Trabalho e Previdenciário (2015/2016) - Associação dos Magistrados do Trabalho do Paraná",
-                    "Curso em Processo Civil (2018/2019) - Instituto Romeu Felipe Bacellar",
-                ],
+                course: "Curso em Direito do Trabalho e Previdenciário",
+                date: "2015-2016",
+                institution: "Associação dos Magistrados do Trabalho do Paraná",
+            },
+            {
+                course: "Cálculos Trabalhistas",
+                date: "2009",
+                institution: "Escola Superior da Advocacia- OAB/PR",
+            },
+            {
+                course: "Noções Gerais de Direito Previdenciário",
+                date: "2008",
+                institution: "Curso Jurídico - Extensão Universitária do Paraná",
+            },
+            {
+                course: "Especialização em Direito Público",
+                date: "2007-2008",
+                institution: "Instituto São Domingos",
+            },
+            {
+                course: "Graduação em Direito",
+                date: "2002-2007",
+                institution: "Pontifícia Universidade Católica do Paraná",
             },
         ],
     },

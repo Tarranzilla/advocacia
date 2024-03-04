@@ -19,21 +19,27 @@ const teamList_EN: TeamMember[] = [
 
         academicBackground: [
             {
-                title: "Academic Background",
-                paragraphs: [
-                    "Specialization in Tax Law and Tax Procedure (2012-2013) - Curitiba University Center. Title: Normative Simultaneity in Tax Exemption. Advisor: Mauricio Dalri Timm do Valle",
-                    "Bachelor's degree in Law (2006-2011) - Tuiuti University of Paraná. Title: Toll - Legal, Political, and Social Aspects. Advisor: Pericles Coelho",
-                ],
+                course: "Specialization in Tax Law and Tax Procedure",
+                date: "2012-2013",
+                institution: "Curitiba University Center",
+            },
+            {
+                course: "Bachelor's Degree in Law",
+                date: "2006-2011",
+                institution: "Tuiuti University of Paraná",
             },
         ],
 
         academicProduction: [
             {
-                title: "Academic Production",
-                paragraphs: [
-                    "MACHADO, T. R. UNION DUES AND ITS LEGAL NATURE. 2018. (Presentation of Work/Congress)",
-                    "MACHADO, T. R. Normative Simultaneity in Tax Exemption. 2016. (Presentation of Work/Congress)",
-                ],
+                authors: "MACHADO, T. R.",
+                title: "Union Fee and its Legal Nature",
+                date: "2018",
+            },
+            {
+                authors: "MACHADO, T. R.",
+                title: "Normative Simultaneity in Tax Exemption",
+                date: "2016",
             },
         ],
     },
@@ -55,23 +61,34 @@ const teamList_EN: TeamMember[] = [
 
         academicBackground: [
             {
-                title: "Academic Background",
-                paragraphs: [
-                    "Specialization in Public Law (2007-2008) - São Domingos Institute Courses and Editorial Services Ltda, Advisor: Guilherme da Câmara Silva",
-                    "Bachelor's degree in Law (2002-2007) - Pontifical Catholic University of Paraná, Advisor: José Carlos Santos Gomes",
-                ],
+                course: "Civil Procedure Course",
+                date: "2018-2019",
+                institution: "Romeu Felipe Bacellar Institute",
             },
-        ],
-
-        complementaryEducation: [
             {
-                title: "Complementary Education",
-                paragraphs: [
-                    "Labor Calculations (2009) - Superior School of Advocacy - OAB/PR",
-                    "General Notions of Social Security Law (2008) - Legal Course - University Extension of Paraná",
-                    "Social Security and Labor Laws Course (2015/2016) - Association of Labor Magistrates of Paraná",
-                    "Civil Process Course (2018/2019) - Romeu Felipe Bacellar Institute",
-                ],
+                course: "Labor and Social Security Law Course",
+                date: "2015-2016",
+                institution: "Association of Labor Judges of Paraná",
+            },
+            {
+                course: "Labor Calculations",
+                date: "2009",
+                institution: "Higher School of Advocacy - OAB/PR",
+            },
+            {
+                course: "General Notions of Social Security Law",
+                date: "2008",
+                institution: "Legal Course - University Extension of Paraná",
+            },
+            {
+                course: "Specialization in Public Law",
+                date: "2007-2008",
+                institution: "São Domingos Institute",
+            },
+            {
+                course: "Bachelor's Degree in Law",
+                date: "2002-2007",
+                institution: "Pontifical Catholic University of Paraná",
             },
         ],
     },

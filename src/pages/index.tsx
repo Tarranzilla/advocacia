@@ -9,6 +9,9 @@ import { motion as m } from "framer-motion";
 
 import { useSimpleTranslation } from "@/international/useSimpleTranslation";
 
+import { AcademicCourse } from "@/types/AcademicCourse";
+import { AcademicCitation } from "@/types/AcademicCitation";
+
 export default function Home() {
     const t = useSimpleTranslation();
 
@@ -95,28 +98,43 @@ export default function Home() {
 
                                             {member.complementaryEducation && (
                                                 <div className="Team_Member_SubDescription Team_Member_ComplementaryEducation">
-                                                    <h3>{member.complementaryEducation[0].title}</h3>
-                                                    {member.complementaryEducation[0].paragraphs.map((paragraph, index) => (
-                                                        <p key={index}>{paragraph}</p>
+                                                    <h3>Formação Complementar</h3> {/* {t.landingPage.sections.team.academicBackground.title} */}
+                                                    {member.complementaryEducation.map((course: AcademicCourse, index) => (
+                                                        <div key={index} className="Team_Member_AcademicCourse">
+                                                            <h4>{course.course}</h4>
+                                                            <p>{course.institution}</p>
+                                                            <p>{course.date}</p>
+                                                        </div>
                                                     ))}
                                                 </div>
                                             )}
 
                                             {member.academicBackground && (
                                                 <div className="Team_Member_SubDescription Team_Member_AcademicBackground">
-                                                    <h3>{member.academicBackground[0].title}</h3>
-                                                    {member.academicBackground[0].paragraphs.map((paragraph, index) => (
-                                                        <p key={index}>{paragraph}</p>
+                                                    <h3>Formação Acadêmica</h3> {/* {t.landingPage.sections.team.academicBackground.title} */}
+                                                    {member.academicBackground.map((course: AcademicCourse, index) => (
+                                                        <div key={index} className="Team_Member_AcademicCourse">
+                                                            <h4>{course.course}</h4>
+                                                            <p>{course.institution}</p>
+                                                            <p>{course.date}</p>
+                                                        </div>
                                                     ))}
                                                 </div>
                                             )}
 
                                             {member.academicProduction && (
-                                                <div className="Team_Member_SubDescription Team_Member_AcademicProduction">
-                                                    <h3>{member.academicProduction[0].title}</h3>
-                                                    {member.academicProduction[0].paragraphs.map((paragraph, index) => (
-                                                        <p key={index}>{paragraph}</p>
-                                                    ))}
+                                                <div className="Team_Member_SubDescription">
+                                                    <h3>Produção Acadêmica</h3>
+                                                    {member.academicProduction.map((production: AcademicCitation, index: any) => {
+                                                        return (
+                                                            <div className="Team_Member_SubDescription Team_Member_AcademicProduction" key={index}>
+                                                                <h4>{production.title}</h4>
+                                                                <p>{production.authors}</p>
+                                                                <p>{production.date}</p>
+                                                                <p>{production.details}</p>
+                                                            </div>
+                                                        );
+                                                    })}
                                                 </div>
                                             )}
                                         </div>
