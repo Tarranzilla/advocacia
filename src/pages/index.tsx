@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import ImageSlider from "@/components/ImageSlider";
 import CardGrid from "@/components/cardGrid";
+import GoogleMap from "@/components/GoogleMap";
 
 import { motion as m } from "framer-motion";
 
@@ -185,13 +186,7 @@ export default function Home() {
                                 <p>{t.landingPage.sections.contact.adress.adress}</p>
                             </div>
 
-                            <iframe
-                                title="Mapa de localização do escritório de advocacia Stresser & Machado"
-                                className="Map"
-                                referrerPolicy="no-referrer-when-downgrade"
-                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBoWxQtCEHcm-AqgB3fjGveoXqVgy8g9pI&q=Avenida+Manoel+Ribas+507+Merces+Curitiba+-+PR+-+Brasil"
-                                allowFullScreen
-                            ></iframe>
+                            <GoogleMap />
                         </div>
                     </section>
                 </main>

@@ -9,6 +9,7 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@googlemaps/js-api-loader": "^1.16.6",
         "@material-design-icons/font": "^0.14.13",
         "@react-google-maps/api": "^2.19.3",
         "@reduxjs/toolkit": "^2.2.1",
