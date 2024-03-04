@@ -4,6 +4,7 @@ const bannerList: Banner[] = [
     {
         key: "banner1",
         title: "Maximize sua Aposentadoria",
+        service: "revisão da vida toda.",
         subtitle: "Descubra se você tem direito à Revisão da Vida Toda e aumente sua aposentadoria agora mesmo!",
         imgSrc: "/banner_imgs/banner_aposentadoria_001.png",
         size: {
@@ -14,6 +15,7 @@ const bannerList: Banner[] = [
     {
         key: "banner2",
         title: "Assessoria Especializada em Benefícios do INSS",
+        service: "aposentadoria e benefícios do INSS.",
         subtitle: "Obtenha orientação profissional para garantir seus direitos previdenciários. Conte com nossa experiência!.",
         imgSrc: "/banner_imgs/banner_inss_001.png",
         size: {
@@ -24,6 +26,7 @@ const bannerList: Banner[] = [
     {
         key: "banner3",
         title: "Facilite o Processo de Inventário",
+        service: "processo de inventário.",
         subtitle: "Apoio jurídico especializado para agilizar e simplificar o processo de inventário.",
         imgSrc: "/banner_imgs/banner_inventario_001.png",
         size: {
@@ -34,6 +37,7 @@ const bannerList: Banner[] = [
     {
         key: "banner4",
         title: "Proteja seus Direitos no Trabalho",
+        service: "direito trabalhista.",
         subtitle: "Conte com nossa expertise para defender seus interesses e garantir seus direitos!",
         imgSrc: "/banner_imgs/banner_trabalhista_001.png",
         size: {

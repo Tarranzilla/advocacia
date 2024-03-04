@@ -1,5 +1,6 @@
 type Banner = {
     key: string;
+    service: string;
     title: string;
     subtitle: string;
     actionBtn?: string;
