@@ -7,7 +7,7 @@ const teamList_EN: TeamMember[] = [
         role: "Lawyer and Manager",
         OAB_number: "OAB/PR | 60235",
         OAB_Link: "https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=60235&tpinsc=A",
-        cellphone: "(41) 991 191 904",
+        cellphone: "(41) 9.9119-1904",
         telephone: "(41) 3668-8000",
         email: "telma@stresseremachado.adv.br",
 
@@ -44,8 +44,8 @@ const teamList_EN: TeamMember[] = [
         role: "Lawyer and Manager",
         OAB_number: "OAB/PR | 46290",
         OAB_Link: "https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=46290&tpinsc=A",
-        cellphone: "(41) 999 155 252",
-        telephone: "(41) 3335-6000",
+        cellphone: "(41) 9.9915-5252",
+        telephone: "(41) 3668-8000",
         email: "fran@stressermachado.adv.br",
 
         description: [
@@ -69,14 +69,9 @@ const teamList_EN: TeamMember[] = [
                 paragraphs: [
                     "Labor Calculations (2009) - Superior School of Advocacy - OAB/PR",
                     "General Notions of Social Security Law (2008) - Legal Course - University Extension of Paraná",
+                    "Social Security and Labor Laws Course (2015/2016) - Association of Labor Magistrates of Paraná",
+                    "Civil Process Course (2018/2019) - Romeu Felipe Bacellar Institute",
                 ],
-            },
-        ],
-
-        professionalExperience: [
-            {
-                title: "Professional Experience",
-                paragraphs: ["Legal Advisory at Banco do Brasil S/A (2005-2007)"],
             },
         ],
     },

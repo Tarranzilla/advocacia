@@ -85,7 +85,7 @@ export default function Home() {
                                             ))}
 
                                             {member.professionalExperience && (
-                                                <div className="Team_Member_ProfessionalExperience">
+                                                <div className="Team_Member_SubDescription Team_Member_ProfessionalExperience">
                                                     <h3>{member.professionalExperience[0].title}</h3>
                                                     {member.professionalExperience[0].paragraphs.map((paragraph, index) => (
                                                         <p key={index}>{paragraph}</p>
@@ -94,7 +94,7 @@ export default function Home() {
                                             )}
 
                                             {member.complementaryEducation && (
-                                                <div className="Team_Member_ComplementaryEducation">
+                                                <div className="Team_Member_SubDescription Team_Member_ComplementaryEducation">
                                                     <h3>{member.complementaryEducation[0].title}</h3>
                                                     {member.complementaryEducation[0].paragraphs.map((paragraph, index) => (
                                                         <p key={index}>{paragraph}</p>
@@ -103,7 +103,7 @@ export default function Home() {
                                             )}
 
                                             {member.academicBackground && (
-                                                <div className="Team_Member_AcademicBackground">
+                                                <div className="Team_Member_SubDescription Team_Member_AcademicBackground">
                                                     <h3>{member.academicBackground[0].title}</h3>
                                                     {member.academicBackground[0].paragraphs.map((paragraph, index) => (
                                                         <p key={index}>{paragraph}</p>
@@ -112,7 +112,7 @@ export default function Home() {
                                             )}
 
                                             {member.academicProduction && (
-                                                <div className="Team_Member_AcademicProduction">
+                                                <div className="Team_Member_SubDescription Team_Member_AcademicProduction">
                                                     <h3>{member.academicProduction[0].title}</h3>
                                                     {member.academicProduction[0].paragraphs.map((paragraph, index) => (
                                                         <p key={index}>{paragraph}</p>
@@ -142,9 +142,9 @@ export default function Home() {
                             <div className="Contact_Layout_Container">
                                 <div className="Telephone Contact_Layout_Item" key={"contato_telefone"}>
                                     <h3 className="Contact_Layout_Item_Title">{t.landingPage.sections.contact.telephone.title}</h3>
-                                    <p>(41) 999 155 252</p>
-                                    <p>(41) 991 191 904</p>
-                                    <p>(41) 3333-3333</p>
+                                    <p>(41) 9.9915-5252</p>
+                                    <p>(41) 9.9119-1904</p>
+                                    <p>(41) 3668-8000</p>
                                 </div>
 
                                 <div className="Working_Hours Contact_Layout_Item" key={"contato_email"}>
@@ -171,7 +171,7 @@ export default function Home() {
                                 title="Mapa de localização do escritório de advocacia Stresser & Machado"
                                 className="Map"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBoWxQtCEHcm-AqgB3fjGveoXqVgy8g9pI&q=Avenida+Manoel+Ribas,+n%C2%BA+507,+Merc%C3%AAs+Curitiba+-+PR+-+Brasil"
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBoWxQtCEHcm-AqgB3fjGveoXqVgy8g9pI&q=Avenida+Manoel+Ribas+507+Merces+Curitiba+-+PR+-+Brasil"
                                 allowFullScreen
                             ></iframe>
                         </div>

@@ -7,6 +7,7 @@ import { useSimpleTranslation } from "@/international/useSimpleTranslation";
 export default function Footer() {
     const router = useRouter();
     const message = "Olá, eu gostaria de agendar uma consulta.";
+    const telephoneNumber = "5541997497825";
     const t = useSimpleTranslation();
 
     function toUrlValidString(str: string) {
@@ -43,7 +44,7 @@ export default function Footer() {
 
                 <div className="Footer_Actions">
                     <div className="Footer_Btn Quote_Btn" title={t.footer.scheduleBtn.label}>
-                        <Link href={`https://wa.me/1234567890?text=${toUrlValidString(message)}`} target="_blank" rel="noopener noreferrer">
+                        <Link href={`https://wa.me/${telephoneNumber}?text=${toUrlValidString(message)}`} target="_blank" rel="noopener noreferrer">
                             <span className="Footer_Icon material-icons">event_available</span>
                         </Link>
                     </div>

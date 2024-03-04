@@ -34,7 +34,7 @@ const bannerList: Banner[] = [
     {
         key: "banner4",
         title: "Proteja seus Direitos no Trabalho",
-        subtitle: "Conte com nossa expertise em Direito Trabalhista para defender seus interesses e garantir seus direitos laborais!",
+        subtitle: "Conte com nossa expertise para defender seus interesses e garantir seus direitos!",
         imgSrc: "/banner_imgs/banner_trabalhista_001.png",
         size: {
             width: 740,

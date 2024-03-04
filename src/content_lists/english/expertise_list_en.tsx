@@ -44,11 +44,6 @@ export const expertiseList_EN: Expertise[] = [
                 title: "Work Accidents",
                 description: "Issues related to occupational accidents and diseases.",
             },
-            {
-                key: "normas_coletivas",
-                title: "Collective Agreements",
-                description: "Collective labor agreements and conventions.",
-            },
         ],
     },
     {
@@ -139,16 +134,6 @@ export const expertiseList_EN: Expertise[] = [
             height: 200,
         },
         subitems: [
-            {
-                key: "direito_sucessoes",
-                title: "Succession Law",
-                description: "Regulates the transmission of assets and rights from a deceased person to their heirs.",
-            },
-            {
-                key: "direito_familia",
-                title: "Family Law",
-                description: "Regulates family relationships, such as marriage, divorce, child custody, alimony, etc.",
-            },
             {
                 key: "direito_imobiliario",
                 title: "Real Estate Law",
@@ -400,6 +385,11 @@ export const expertiseList_EN: Expertise[] = [
             height: 200,
         },
         subitems: [
+            {
+                key: "direito_do_consumidor",
+                title: "Consumer Law",
+                description: "Protection of consumer rights in banking relationships, including abusive clauses, undue charges, etc.",
+            },
             {
                 key: "contratos_bancarios",
                 title: "Banking Contracts",

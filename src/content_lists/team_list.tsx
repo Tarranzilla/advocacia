@@ -7,7 +7,7 @@ const teamList: TeamMember[] = [
         role: "Advogada e Gestora",
         OAB_number: "OAB/PR | 60235",
         OAB_Link: "https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=60235&tpinsc=A",
-        cellphone: "(41) 991 191 904",
+        cellphone: "(41) 9.9119-1904",
         telephone: "(41) 3668-8000",
         email: "telma@stresseremachado.adv.br",
 
@@ -44,20 +44,20 @@ const teamList: TeamMember[] = [
         role: "Advogada e Gestora",
         OAB_number: "OAB/PR | 46290",
         OAB_Link: "https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=46290&tpinsc=A",
-        cellphone: "(41) 999 155 252",
-        telephone: "(41) 3335-6000",
+        cellphone: "(41) 9.9915-5252",
+        telephone: "(41) 3668-8000",
         email: "fran@stressermachado.adv.br",
 
         description: [
-            "Graduada em Direito pela Pontifícia Universidade Católica do Paraná (2007), com especialização em Direito Público com ênfase em Direito Constitucional pelo renomado jurista Damásio de Jesus.",
-            "Advogada atuante nas áreas do Direito do Trabalho, Família e Previdenciário.",
+            "Possui graduação em Direito pela Pontifícia Universidade Católica do Paraná (2007) e especialização em Direito Público com ênfase em Direito Constitucional pela Instituição do renomado jurista Damásio de Jesus (2008) e foi aluna do Curso em direito do Trabalho e Previdenciário pela Associação dos Magistrados do Trabalho do Paraná (2015/2016), bem como, do Curso em Processo Civil do Instituto Romeu Felipe Bacellar (2018/2019).",
+            "Advogada atuante nas áreas do Direito do Trabalho, Previdenciário, Tributário, Cível e Família.",
         ],
 
         academicBackground: [
             {
                 title: "Formação Acadêmica",
                 paragraphs: [
-                    "Especialização em Direito Público (2007-2008) - Instituto São Domingos Cursos e Serviços Editoriais LTDA, Orientador: Guilherme da Câmara Silva",
+                    "Especialização em Direito Público (2007-2008) - Instituto São Domingos, Orientador: Guilherme da Câmara Silva",
                     "Graduação em Direito (2002-2007) - Pontifícia Universidade Católica do Paraná, Orientador: José Carlos Santos Gomes",
                 ],
             },
@@ -69,14 +69,9 @@ const teamList: TeamMember[] = [
                 paragraphs: [
                     "Cálculos Trabalhistas (2009) - Escola Superior da Advocacia- OAB/PR",
                     "Noções Gerais de Direito Previdenciário (2008) - Curso Jurídico - Extensão Universitária do Paraná",
+                    "Curso em direito do Trabalho e Previdenciário (2015/2016) - Associação dos Magistrados do Trabalho do Paraná",
+                    "Curso em Processo Civil (2018/2019) - Instituto Romeu Felipe Bacellar",
                 ],
-            },
-        ],
-
-        professionalExperience: [
-            {
-                title: "Experiência Profissional",
-                paragraphs: ["Assessoria Jurídica do Banco do Brasil S/A (2005-2007)"],
             },
         ],
     },

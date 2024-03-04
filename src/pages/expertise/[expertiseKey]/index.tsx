@@ -72,6 +72,7 @@ export async function getStaticProps({ params, locale }: { params: { expertiseKe
 export default function ExpertiseDetail({ expertise }: { expertise: Expertise }) {
     const router = useRouter();
     const t = useSimpleTranslation();
+    const telephoneNumber = "5541997497825";
 
     if (router.isFallback) {
         return <div>Loading...</div>;
@@ -117,7 +118,7 @@ export default function ExpertiseDetail({ expertise }: { expertise: Expertise })
 
                         <Link
                             className="Schedule_Btn"
-                            href={`https://wa.me/1234567890?text=${toUrlValidString(message)}`}
+                            href={`https://wa.me/${telephoneNumber}?text=${toUrlValidString(message)}`}
                             target="_blank"
                             rel="noopener noreferrer"
                         >

@@ -44,11 +44,6 @@ export const expertiseList: Expertise[] = [
                 title: "Acidentes de Trabalho",
                 description: "Questões relacionadas a acidentes e doenças ocupacionais.",
             },
-            {
-                key: "normas_coletivas",
-                title: "Normas Coletivas",
-                description: "Convenções e acordos coletivos de trabalho.",
-            },
         ],
     },
     {
@@ -140,16 +135,6 @@ export const expertiseList: Expertise[] = [
             height: 200,
         },
         subitems: [
-            {
-                key: "direito_sucessoes",
-                title: "Direito das Sucessões",
-                description: "Regulamenta a transmissão dos bens e direitos de uma pessoa falecida aos seus herdeiros.",
-            },
-            {
-                key: "direito_familia",
-                title: "Direito de Família",
-                description: "Regula as relações familiares, como casamento, divórcio, guarda de filhos, pensão alimentícia, etc.",
-            },
             {
                 key: "direito_imobiliario",
                 title: "Direito Imobiliário",
@@ -404,6 +389,11 @@ export const expertiseList: Expertise[] = [
             height: 200,
         },
         subitems: [
+            {
+                key: "direito_do_consumidor",
+                title: "Direito do Consumidor",
+                description: "Defesa dos interesses do consumidor perante instituições bancárias, fraudes, abusos contratuais e etc.",
+            },
             {
                 key: "contratos_bancarios",
                 title: "Contratos Bancários",

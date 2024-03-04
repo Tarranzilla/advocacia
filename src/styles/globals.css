@@ -164,6 +164,18 @@ body.body-no-scroll {
     border-radius: var(--border-radius);
     border: none;
     cursor: pointer;
+    transition: scale 0.3s ease, background-color 0.3s ease, font-size 0.3s ease;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cookie_Btn:focus-within,
+.Cookie_Btn:hover {
+    background-color: white;
+    font-size: 1.1rem;
+    scale: 1.05;
 }
 
 .terms-of-use,
@@ -560,7 +572,7 @@ body.body-no-scroll {
 .ImageSlider_Indicator.active {
     height: 15px;
     width: 15px;
-    background-color: var(--dark-text-color);
+    background-color: white;
 }
 
 /* SOBRE */
@@ -654,6 +666,12 @@ body.body-no-scroll {
 .Team_Member_ComplementaryEducation > h3,
 .Team_Member_ProfessionalExperience > h3 {
     margin-bottom: 0.5rem;
+}
+
+.Team_Member_SubDescription {
+    display: flex;
+    flex-direction: column;
+    gap: var(--normal-gap);
 }
 
 /* ATUAÇÃO  */
@@ -953,6 +971,10 @@ body.body-no-scroll {
 
     .Expertise_Page_Footer {
         flex-direction: column;
+    }
+
+    .Footer_Actions {
+        flex-direction: row-reverse;
     }
 }
 
