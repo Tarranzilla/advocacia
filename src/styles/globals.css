@@ -73,6 +73,12 @@ body {
     color: var(--text-color);
 }
 
+p {
+    font-family: "Willpower Slab Regular";
+    letter-spacing: 0.15rem;
+    font-weight: 300;
+}
+
 body.body-no-scroll {
     overflow: hidden;
 }
@@ -652,7 +658,7 @@ body.body-no-scroll {
     display: flex;
     align-items: center;
     gap: var(--normal-gap);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
 .Team_Member_Description {
@@ -799,7 +805,7 @@ body.body-no-scroll {
 .Schedule_Btn:focus-within,
 .Schedule_Btn:hover {
     background-color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /* CONTATO */
@@ -963,7 +969,17 @@ body.body-no-scroll {
     }
 
     .Expertise_Page_Footer {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .Schedule_Btn {
+        margin-top: unset;
+        padding-inline: var(--normal-gap);
+    }
+
+    .Schedule_Btn > .material-icons {
+        margin-inline: var(--normal-gap);
     }
 
     .Footer_Actions {

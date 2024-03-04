@@ -127,7 +127,7 @@ export default function Home() {
                                                     <h3>Produção Acadêmica</h3>
                                                     {member.academicProduction.map((production: AcademicCitation, index: any) => {
                                                         return (
-                                                            <div className="Team_Member_SubDescription Team_Member_AcademicProduction" key={index}>
+                                                            <div className="Team_Member_AcademicProduction" key={index}>
                                                                 <h4>{production.title}</h4>
                                                                 <p>{production.authors}</p>
                                                                 <p>{production.date}</p>

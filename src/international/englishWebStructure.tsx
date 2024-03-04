@@ -9,7 +9,7 @@ import termsList_EN from "@/content_lists/english/terms_list_en";
 const englishWebStructure: WebStructure = {
     common: {
         customScheduleText: "Schedule an Appointment",
-        returnToAreasOfExpertise: "Return to Areas of Expertise",
+        returnToAreasOfExpertise: "Areas of Expertise",
         customTitle: "Stresser & Machado | Advocacy and Legal Consultancy",
         customDescription:
             "Law firm in Curitiba led by two experienced lawyers, with twenty years of experience in the market and a solid academic background. We offer a wide range of legal services, including civil, criminal, labor, administrative, and tax law, with a commitment to providing reliable and personalized legal guidance to meet the individual needs of our clients.",
