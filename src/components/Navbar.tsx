@@ -48,6 +48,14 @@ export default function Navbar() {
         }
     }, [searchInput, expertiseAreas]);
 
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+    }, [menuOpen]);
+
     return (
         <>
             <div className="Navbar">
