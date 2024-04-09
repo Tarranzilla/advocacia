@@ -302,7 +302,6 @@ body.body-no-scroll {
 }
 
 .Menu_Container {
-    margin-left: auto;
     cursor: pointer;
 }
 
@@ -352,7 +351,25 @@ body.body-no-scroll {
     overflow-y: auto;
 }
 
-.Menu_Nav > a {
+.Search_Result_Link {
+    font-family: "Willpower Slab Regular", sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.25rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: var(--normal-gap);
+    transition: scale 0.3s ease, color 0.3s ease;
+}
+
+.Search_Result_Link:hover,
+.Search_Result_Link:focus-within {
+    color: white;
+    scale: 1.05;
+    border-bottom: 1px solid white;
+}
+
+.Menu_Nav_Link {
     font-family: "Willpower Slab Regular", sans-serif;
     font-size: 1.8rem;
     letter-spacing: 0.25rem;
@@ -363,8 +380,8 @@ body.body-no-scroll {
     transition: scale 0.3s ease, color 0.3s ease;
 }
 
-.Menu_Nav > a:hover,
-.Menu_Nav > a:focus-within {
+.Menu_Nav_Link:hover,
+.Menu_Nav_Link:focus-within {
     color: white;
     scale: 1.1;
     border-bottom: 1px solid white;
@@ -394,6 +411,10 @@ body.body-no-scroll {
     background-color: var(--bg-color);
     color: var(--text-color);
     width: 100%;
+}
+
+.Menu_Lang_Btn {
+    margin-top: var(--normal-gap);
 }
 
 .Expertise_Page_Wrapper {
@@ -945,6 +966,7 @@ body.body-no-scroll {
 
     .Menu_Container {
         margin: 0;
+        margin-left: auto;
     }
 
     .ImageSlide img {
