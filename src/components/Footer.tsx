@@ -49,12 +49,12 @@ export default function Footer() {
                         </Link>
                     </div>
                     <div className="Footer_Btn Phone_Btn" title={t.footer.telephoneBtn.label}>
-                        <Link href="tel:+1234567890">
+                        <Link href="tel:+5541997497825">
                             <span className="Footer_Icon material-icons">phone</span>
                         </Link>
                     </div>
                     <div className="Footer_Btn Email_Btn" title={t.footer.emailBtn.label}>
-                        <Link href="mailto:example@example.com">
+                        <Link href="mailto:assessora@stresseremachado.adv.br">
                             <span className="Footer_Icon material-icons">email</span>
                         </Link>
                     </div>
