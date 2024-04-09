@@ -360,6 +360,8 @@ body.body-no-scroll {
     border-bottom: 1px solid var(--text-color);
     padding-bottom: var(--normal-gap);
     transition: scale 0.3s ease, color 0.3s ease;
+    min-width: 20rem;
+    max-width: 30rem;
 }
 
 .Search_Result_Link:hover,
