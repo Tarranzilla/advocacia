@@ -133,6 +133,9 @@ export type WebStructure = {
                 key: string;
                 title: string;
                 members: TeamMember[];
+                academicBackgroundTitle: string;
+                academicProductionTitle: string;
+                complementaryEducationTitle: string;
             };
 
             expertise: {

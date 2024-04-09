@@ -4,7 +4,7 @@ const termsList_EN: ParagraphsWithTitle[] = [
     {
         title: "Terms of Use",
         paragraphs: [
-            "These Terms of Use govern the use of the Stresser e Machado law firm's website (we, our, or us). By accessing and using our website [insert website URL], you agree to these terms and conditions.",
+            "These Terms of Use govern the use of the Stresser e Machado law firm's website (we, our, or us). By accessing and using our website www.stresseremachado.adv.br, you agree to these terms and conditions.",
         ],
     },
     {

@@ -102,7 +102,7 @@ export default function Home() {
 
                                             {member.complementaryEducation && (
                                                 <div className="Team_Member_SubDescription Team_Member_ComplementaryEducation">
-                                                    <h3>Formação Complementar</h3> {/* {t.landingPage.sections.team.academicBackground.title} */}
+                                                    <h3>{t.landingPage.sections.team.complementaryEducationTitle}</h3>
                                                     {member.complementaryEducation.map((course: AcademicCourse, index) => (
                                                         <div key={index} className="Team_Member_AcademicCourse">
                                                             <h4>{course.course}</h4>
@@ -115,7 +115,7 @@ export default function Home() {
 
                                             {member.academicBackground && (
                                                 <div className="Team_Member_SubDescription Team_Member_AcademicBackground">
-                                                    <h3>Formação Acadêmica</h3> {/* {t.landingPage.sections.team.academicBackground.title} */}
+                                                    <h3>{t.landingPage.sections.team.academicBackgroundTitle}</h3>
                                                     {member.academicBackground.map((course: AcademicCourse, index) => (
                                                         <div key={index} className="Team_Member_AcademicCourse">
                                                             <h4>{course.course}</h4>
@@ -128,7 +128,7 @@ export default function Home() {
 
                                             {member.academicProduction && (
                                                 <div className="Team_Member_SubDescription">
-                                                    <h3>Produção Acadêmica</h3>
+                                                    <h3>{t.landingPage.sections.team.academicProductionTitle}</h3>
                                                     {member.academicProduction.map((production: AcademicCitation, index: any) => {
                                                         return (
                                                             <div className="Team_Member_AcademicProduction" key={index}>

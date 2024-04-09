@@ -116,6 +116,9 @@ const portugueseWebStructure: WebStructure = {
                 key: "equipe",
                 title: "Nossa Equipe",
                 members: teamList,
+                academicBackgroundTitle: "Formação Acadêmica",
+                academicProductionTitle: "Produção Acadêmica",
+                complementaryEducationTitle: "Formação Complementar",
             },
 
             expertise: {

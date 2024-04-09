@@ -116,6 +116,9 @@ const englishWebStructure: WebStructure = {
                 key: "equipe",
                 title: "Our Team",
                 members: teamList_EN,
+                academicBackgroundTitle: "Academic Background",
+                academicProductionTitle: "Academic Production",
+                complementaryEducationTitle: "Complementary Education",
             },
 
             expertise: {

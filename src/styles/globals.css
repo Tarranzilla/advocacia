@@ -692,6 +692,7 @@ body.body-no-scroll {
 .Expertise_Card {
     display: flex;
     flex-direction: column;
+    height: 100%;
     gap: var(--small-gap);
     padding: var(--medium-gap);
     border: 1px solid var(--text-color);
