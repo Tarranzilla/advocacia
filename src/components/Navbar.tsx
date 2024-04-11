@@ -26,18 +26,22 @@ export default function Navbar() {
         router.push(currentPath, currentPath, { locale: newLocale });
     };
 
+    const removeAccents = (str: string) => {
+        return str.normalize("NFD").replace(/[\u0300-\u036f\u02C6-\u02C8\u02D8-\u02DD\u02DA\u02DB\u02C7\u02D9]/g, "");
+    };
+
     useEffect(() => {
         if (searchInput === "") {
             setSearchResults([]);
         } else {
             const results = expertiseAreas.flatMap((expertise) => {
                 const matches = [];
-                if (expertise.title.toLowerCase().includes(searchInput.toLowerCase())) {
+                if (removeAccents(expertise.title.toLowerCase()).includes(removeAccents(searchInput.toLowerCase()))) {
                     matches.push(expertise);
                 }
                 if (expertise.subitems) {
                     expertise.subitems.forEach((subitem) => {
-                        if (subitem.title.toLowerCase().includes(searchInput.toLowerCase())) {
+                        if (removeAccents(subitem.title.toLowerCase()).includes(removeAccents(searchInput.toLowerCase()))) {
                             matches.push({ ...expertise, title: subitem.title });
                         }
                     });
