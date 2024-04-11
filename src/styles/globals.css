@@ -268,6 +268,12 @@ body.body-no-scroll {
 .Logo {
     height: 2.5rem;
     width: auto;
+    transition: transform 0.3s ease;
+}
+
+.Logo:hover,
+.Logo:focus-visible {
+    transform: scale(1.05);
 }
 
 .Logo_Type {
@@ -403,6 +409,11 @@ body.body-no-scroll {
     gap: var(--large-gap);
     padding: var(--large-gap);
     overflow-y: auto;
+}
+
+.No_Search_Matches_Info {
+    margin-top: var(--normal-gap);
+    text-align: center;
 }
 
 .Search_Result_Link {

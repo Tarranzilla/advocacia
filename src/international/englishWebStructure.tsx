@@ -14,6 +14,8 @@ const englishWebStructure: WebStructure = {
         customDescription:
             "Law firm in Curitiba led by two experienced lawyers, with twenty years of experience in the market and a solid academic background. We offer a wide range of legal services, including civil, criminal, labor, administrative, and tax law, with a commitment to providing reliable and personalized legal guidance to meet the individual needs of our clients.",
         customWebsiteURL: "https://www.stresseremachado.adv.br/en",
+
+        noSearchResultsFound: "No item corresponds to your search.",
     },
     navbar: {
         logo: {

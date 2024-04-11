@@ -64,9 +64,9 @@ export default function Navbar() {
         <>
             <div className="Navbar">
                 <div className="Navbar_Content">
-                    <div className="Logo_Container">
+                    <Link href={"/"} className="Logo_Container">
                         <Image className="Logo" src="/brand_imgs/Logo_Orange.png" alt="Logo" width={100} height={100} />
-                    </div>
+                    </Link>
                     <h1 className="Logo_Type">STRESSER & MACHADO</h1>
 
                     <div className="Navbar_Links Desktop_Only">
@@ -108,6 +108,10 @@ export default function Navbar() {
                                 <span className="material-icons">search</span>
                             </button>
                         </div>
+
+                        {searchResults.length === 0 && searchInput !== "" && (
+                            <p className="No_Search_Matches_Info">{t.common.noSearchResultsFound}</p>
+                        )}
 
                         <div className="Menu_Nav">
                             {searchResults.length > 0

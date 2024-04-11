@@ -17,6 +17,8 @@ export type WebStructure = {
             label: string;
         };
 
+        noSearchResultsFound: string;
+
         shareBtn?: {
             path: string;
             text: string;
