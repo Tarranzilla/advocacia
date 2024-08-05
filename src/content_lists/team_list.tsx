@@ -2,7 +2,7 @@ import { TeamMember } from "@/types/TeamMember";
 
 const teamList: TeamMember[] = [
     {
-        picture: "/team_imgs/imagem_telma_2.png",
+        picture: "/team_imgs/imagem_telma_final.png",
         name: "Telma Regina Machado",
         role: "Advogada e Gestora",
         OAB_number: "OAB/PR | 60235",
@@ -20,7 +20,7 @@ const teamList: TeamMember[] = [
         academicBackground: [
             {
                 course: "Mestado em Direito Empresarial e Cidadania",
-                date: "2020-2022",
+                date: "2017-2019",
                 institution: "Universidade Unicuritiba",
             },
             {
@@ -50,7 +50,7 @@ const teamList: TeamMember[] = [
     },
 
     {
-        picture: "/team_imgs/imagem_franchielle_2.png",
+        picture: "/team_imgs/imagem_franchielle_final.png",
         name: "Franchielle Stresser Gioppo",
         role: "Advogada e Gestora",
         OAB_number: "OAB/PR | 46290",
