@@ -2,7 +2,7 @@ import { TeamMember } from "@/types/TeamMember";
 
 const teamList: TeamMember[] = [
     {
-        picture: "/team_imgs/advogada_001.png",
+        picture: "/team_imgs/imagem_telma_2.png",
         name: "Telma Regina Machado",
         role: "Advogada e Gestora",
         OAB_number: "OAB/PR | 60235",
@@ -14,10 +14,15 @@ const teamList: TeamMember[] = [
         description: [
             "Pós-graduada em Direito e Processo Tributário pela UNICURITIBA em 2013. Atua na advocacia tributária administrativa e judicial. Membro do Conselho de Contribuintes e Recursos Fiscais/PR, representando a FIEP/PR.",
             "Atualmente, advoga no Conselho de Contribuintes e Recursos Fiscais (CCRF), atuando em sustentação oral e defesas de Contribuintes do Estado do Paraná.",
-            "Mestranda em Direito Empresarial e Cidadania na UNIVERSIDADE UNICURITIBA. Possui escritório próprio em Curitiba/PR, atuando nas áreas de Direito Tributário, Imobiliário, Família, Consumidor, Trabalho, Previdenciário e Bancário.",
+            "Mestra em Direito Empresarial e Cidadania na UNIVERSIDADE UNICURITIBA. Possui escritório próprio em Curitiba/PR, atuando nas áreas de Inventário, Tributário, Imobiliário, Família, Consumidor, Trabalho, Previdenciário e Bancário.",
         ],
 
         academicBackground: [
+            {
+                course: "Mestado em Direito Empresarial e Cidadania",
+                date: "2020-2022",
+                institution: "Universidade Unicuritiba",
+            },
             {
                 course: "Especialização em Direito Tributário e Processual Tributário",
                 date: "2012-2013",
@@ -45,7 +50,7 @@ const teamList: TeamMember[] = [
     },
 
     {
-        picture: "/team_imgs/advogada_002.png",
+        picture: "/team_imgs/imagem_franchielle_2.png",
         name: "Franchielle Stresser Gioppo",
         role: "Advogada e Gestora",
         OAB_number: "OAB/PR | 46290",

@@ -54,9 +54,7 @@ export default function Home() {
                                 {t.landingPage.sections.team.members.map((member, index) => (
                                     <div className="Team_Member" key={index}>
                                         <div className="Team_Member_Header">
-                                            {/*
-                                                <Image src={member.picture} alt={member.name} width={200} height={300} />
-                                            */}
+                                            <Image src={member.picture} alt={member.name} width={200} height={300} />
 
                                             <div className="Team_Member_Info">
                                                 <h2 className="Team_Member_Name">{member.name}</h2>

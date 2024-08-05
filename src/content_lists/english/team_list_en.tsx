@@ -2,7 +2,7 @@ import { TeamMember } from "@/types/TeamMember";
 
 const teamList_EN: TeamMember[] = [
     {
-        picture: "/team_imgs/advogada_001.png",
+        picture: "/team_imgs/imagem_telma.jpg",
         name: "Telma Regina Machado",
         role: "Lawyer and Manager",
         OAB_number: "OAB/PR | 60235",
@@ -14,10 +14,15 @@ const teamList_EN: TeamMember[] = [
         description: [
             "Post-graduated in Tax Law and Tax Procedure by UNICURITIBA in 2013. Works in administrative and judicial tax advocacy. Member of the Taxpayers and Fiscal Resources Council/PR, representing FIEP/PR.",
             "Currently, works as an attorney at the Taxpayers and Fiscal Resources Council (CCRF), acting in oral advocacy and defense of Taxpayers in the state of Paraná.",
-            "Master's student in Business Law and Citizenship at UNIVERSIDADE UNICURITIBA. Has her own office in Curitiba/PR, working in the areas of Tax, Real Estate, Family, Consumer, Labor, Social Security, and Banking Law.",
+            "Master's degree in Business Law and Citizenship at UNIVERSIDADE UNICURITIBA. Has her own office in Curitiba/PR, working in the areas of Successions, Tax, Real Estate, Family, Consumer, Labor, Social Security, and Banking Law.",
         ],
 
         academicBackground: [
+            {
+                course: "Master's Degree in Business Law and Citizenship",
+                date: "2020-2024",
+                institution: "Unicuritiba University",
+            },
             {
                 course: "Specialization in Tax Law and Tax Procedure",
                 date: "2012-2013",
@@ -45,7 +50,7 @@ const teamList_EN: TeamMember[] = [
     },
 
     {
-        picture: "/team_imgs/advogada_002.png",
+        picture: "/team_imgs/imagem_franchielle.jpg",
         name: "Franchielle Stresser Gioppo",
         role: "Lawyer and Manager",
         OAB_number: "OAB/PR | 46290",
