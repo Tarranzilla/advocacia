@@ -79,6 +79,12 @@ p {
     font-weight: 300;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+}
+
 body.body-no-scroll {
     overflow: hidden;
 }
@@ -749,6 +755,20 @@ body.body-no-scroll {
     font-size: 0.8rem;
 }
 
+.Team_Member_Action a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: "Willpower Slab Regular", sans-serif;
+    letter-spacing: 0.15rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.Team_Member_Action a:hover,
+.Team_Member_Action a:focus {
+    color: white;
+}
+
 .Team_Member_Description {
     display: flex;
     flex-direction: column;
@@ -919,6 +939,20 @@ body.body-no-scroll {
 
 .Contact_Layout_Item_Title {
     margin-bottom: var(--small-gap);
+}
+
+.Contact_Layout_Item a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: "Willpower Slab Regular", sans-serif;
+    letter-spacing: 0.15rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.Contact_Layout_Item a:hover,
+.Contact_Layout_Item a:focus {
+    color: white;
 }
 
 .Adress_Item {
