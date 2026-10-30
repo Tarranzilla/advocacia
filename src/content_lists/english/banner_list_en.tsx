@@ -3,9 +3,9 @@ import Banner from "@/types/Banner";
 const bannerList_EN: Banner[] = [
     {
         key: "banner1",
-        title: "Maximize Your Retirement",
-        service: "whole life review.",
-        subtitle: "Discover if you are eligible for the Whole Life Review and increase your retirement now!",
+        title: "Strategic Retirement Planning",
+        service: "retirement and pension planning.",
+        subtitle: "Ensure the best transition rule and maximize your retirement benefit with comprehensive legal analysis.",
         imgSrc: "/banner_imgs/banner_aposentadoria_001.png",
         size: {
             width: 740,

@@ -67,7 +67,7 @@ export default function Navbar() {
                     <Link href={"/"} className="Logo_Container">
                         <Image className="Logo" src="/brand_imgs/Logo_Orange.png" alt="Logo" width={100} height={100} />
                     </Link>
-                    <h1 className="Logo_Type">STRESSER & MACHADO</h1>
+                    <span className="Logo_Type">STRESSER & MACHADO</span>
 
                     <div className="Navbar_Links Desktop_Only">
                         {t.navbar.navLinks &&

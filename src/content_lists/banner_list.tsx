@@ -3,9 +3,9 @@ import Banner from "@/types/Banner";
 const bannerList: Banner[] = [
     {
         key: "banner1",
-        title: "Maximize sua Aposentadoria",
-        service: "revisão da vida toda.",
-        subtitle: "Descubra se você tem direito à Revisão da Vida Toda e aumente sua aposentadoria agora mesmo!",
+        title: "Planejamento Previdenciário Estratégico",
+        service: "planejamento previdenciário e aposentadoria.",
+        subtitle: "Garanta a melhor regra de transição e o valor ideal para sua aposentadoria com uma análise jurídica completa.",
         imgSrc: "/banner_imgs/banner_aposentadoria_001.png",
         size: {
             width: 740,

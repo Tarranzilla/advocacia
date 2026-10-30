@@ -80,7 +80,9 @@ const englishWebStructure: WebStructure = {
             "This website uses cookies to ensure that you get the best experience.",
             "By continuing to use this site, you agree to the use of cookies.",
         ],
-        btnText: "Understood",
+        btnText: "Accept All",
+        acceptAllBtnText: "Accept All",
+        essentialOnlyBtnText: "Necessary Only",
     },
     privacy: {
         title: "Privacy Policy",

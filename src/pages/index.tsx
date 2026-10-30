@@ -25,30 +25,34 @@ export default function Home() {
 
                 <meta property="og:title" content={t.common.customTitle} />
                 <meta property="og:description" content={t.common.customDescription} />
-                <meta property="og:image" content="https://stresseremachado.vercel.app/brand_imgs/Icone_512.png" />
-                <meta property="og:url" content="https://stresseremachado.vercel.app/" />
+                <meta property="og:image" content="https://www.stresseremachado.adv.br/brand_imgs/Icone_512.png" />
+                <meta property="og:url" content="https://www.stresseremachado.adv.br/" />
 
-                <meta name="author" content="https://pragmata.ninja/"></meta>
+                <meta name="author" content="https://pragmata.ninja/" />
 
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} key="home">
                 <main className="Page_Wrapper">
+                    <h1 style={{ position: "absolute", width: "1px", height: "1px", padding: 0, margin: "-1px", overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", border: 0 }}>
+                        {t.common.customTitle}
+                    </h1>
+
                     <section id="inicio" key={"inicio"}>
                         <ImageSlider content={t.landingPage.sections.home.bannerList} />
                     </section>
                     <section id="quem-somos" key={"quem-somos"}>
                         <div className="About_Container">
-                            <h1 className="Section_Title" key={t.landingPage.sections.about.title}>
+                            <h2 className="Section_Title" key={t.landingPage.sections.about.title}>
                                 {t.landingPage.sections.about.title}
-                            </h1>
+                            </h2>
                             {t.landingPage.sections.about.paragraphs.map((paragraph, index) => (
                                 <p key={index}>{paragraph}</p>
                             ))}
 
-                            <h1 className="Section_Title" key={t.landingPage.sections.team.title}>
+                            <h2 className="Section_Title" key={t.landingPage.sections.team.title}>
                                 {t.landingPage.sections.team.title}
-                            </h1>
+                            </h2>
 
                             <div className="Team_Container">
                                 {t.landingPage.sections.team.members.map((member, index) => (
@@ -56,7 +60,7 @@ export default function Home() {
                                         <div className="Team_Member_Header">
                                             <Image src={member.picture} alt={member.name} width={200} height={300} quality={100} />
 
-                                            <div className="Team_Member_Info">
+                                             <div className="Team_Member_Info">
                                                 <h2 className="Team_Member_Name">{member.name}</h2>
 
                                                 <Link
@@ -71,15 +75,27 @@ export default function Home() {
                                                 <div className="Team_Member_Actions">
                                                     <div className="Team_Member_Action">
                                                         <span className="material-icons">phone</span>
-                                                        <p>{member.cellphone}</p>
+                                                        <p>
+                                                            <Link href={`tel:+55${member.cellphone.replace(/\D/g, "")}`}>
+                                                                {member.cellphone}
+                                                            </Link>
+                                                        </p>
                                                     </div>
                                                     <div className="Team_Member_Action">
-                                                        <span className="material-icons">fax</span>
-                                                        <p>{member.telephone}</p>
+                                                        <span className="material-icons">call</span>
+                                                        <p>
+                                                            <Link href={`tel:+55${member.telephone.replace(/\D/g, "")}`}>
+                                                                {member.telephone}
+                                                            </Link>
+                                                        </p>
                                                     </div>
                                                     <div className="Team_Member_Action">
                                                         <span className="material-icons">mail</span>
-                                                        <p>{member.email}</p>
+                                                        <p>
+                                                            <Link href={`mailto:${member.email}`}>
+                                                                {member.email}
+                                                            </Link>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -162,16 +178,16 @@ export default function Home() {
                             <div className="Contact_Layout_Container">
                                 <div className="Telephone Contact_Layout_Item" key={"contato_telefone"}>
                                     <h3 className="Contact_Layout_Item_Title">{t.landingPage.sections.contact.telephone.title}</h3>
-                                    <p>(41) 9.9915-5252</p>
-                                    <p>(41) 9.9119-1904</p>
-                                    <p>(41) 3668-8000</p>
+                                    <p><Link href="tel:+5541999155252">(41) 9.9915-5252</Link></p>
+                                    <p><Link href="tel:+5541991191904">(41) 9.9119-1904</Link></p>
+                                    <p><Link href="tel:+554136688000">(41) 3668-8000</Link></p>
                                 </div>
 
                                 <div className="Working_Hours Contact_Layout_Item" key={"contato_email"}>
                                     <h3 className="Contact_Layout_Item_Title">Email</h3>
-                                    <p>fran@stresseremachado.adv.br</p>
-                                    <p>telma@stresseremachado.adv.br</p>
-                                    <p>assessora@stresseremachado.adv.br</p>
+                                    <p><Link href="mailto:fran@stresseremachado.adv.br">fran@stresseremachado.adv.br</Link></p>
+                                    <p><Link href="mailto:telma@stresseremachado.adv.br">telma@stresseremachado.adv.br</Link></p>
+                                    <p><Link href="mailto:assessora@stresseremachado.adv.br">assessora@stresseremachado.adv.br</Link></p>
                                 </div>
 
                                 <div className="Working_Hours Contact_Layout_Item">
@@ -183,7 +199,7 @@ export default function Home() {
                             </div>
 
                             <div className="Working_Hours Contact_Layout_Item Adress_Item">
-                                <h1 className="Adress_Title">{t.landingPage.sections.contact.adress.title}</h1>
+                                <h2 className="Adress_Title">{t.landingPage.sections.contact.adress.title}</h2>
                                 <p>{t.landingPage.sections.contact.adress.adress}</p>
                             </div>
 

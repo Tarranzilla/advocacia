@@ -79,7 +79,9 @@ const portugueseWebStructure: WebStructure = {
             "Este site usa cookies para garantir que você obtenha a melhor experiência.",
             "Ao continuar a usar este site, você concorda com o uso de cookies.",
         ],
-        btnText: "Entendi",
+        btnText: "Aceitar Todos",
+        acceptAllBtnText: "Aceitar Todos",
+        essentialOnlyBtnText: "Apenas Necessários",
     },
     privacy: {
         title: "Política de Privacidade",

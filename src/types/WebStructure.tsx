@@ -100,6 +100,8 @@ export type WebStructure = {
         title: string;
         paragraphs: string[];
         btnText: string;
+        acceptAllBtnText?: string;
+        essentialOnlyBtnText?: string;
     };
 
     privacy: {

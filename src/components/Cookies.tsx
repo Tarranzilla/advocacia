@@ -1,18 +1,38 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion as m, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import { useSimpleTranslation } from "@/international/useSimpleTranslation";
 
 export default function Cookies() {
-    const [cookie, setCookie] = useState(false);
+    const [hasAnswered, setHasAnswered] = useState(true); // default true to avoid flash on initial load
     const router = useRouter();
 
     const currentLocale = router.locale;
     const t = useSimpleTranslation();
 
+    useEffect(() => {
+        const saved = localStorage.getItem("cookieConsent") || localStorage.getItem("cookie");
+        if (!saved) {
+            setHasAnswered(false);
+        }
+    }, []);
+
+    const handleAcceptAll = () => {
+        localStorage.setItem("cookieConsent", "accepted");
+        localStorage.setItem("cookie", "true");
+        setHasAnswered(true);
+    };
+
+    const handleEssentialOnly = () => {
+        localStorage.setItem("cookieConsent", "essential");
+        localStorage.setItem("cookie", "false");
+        setHasAnswered(true);
+    };
+
     // Don't show the cookie banner on /privacidade and /termos-de-uso
-    const shouldShowCookieBanner = !cookie && !["/privacidade", "/termos-de-uso"].includes(router.pathname);
+    const shouldShowCookieBanner = !hasAnswered && !["/privacidade", "/termos-de-uso"].includes(router.pathname);
+
     return (
         <AnimatePresence mode="wait">
             {shouldShowCookieBanner && (
@@ -25,20 +45,17 @@ export default function Cookies() {
                     className="Cookie"
                 >
                     <div className="Cookie_Container">
-                        {currentLocale === "en" && (
+                        <h2 className="Cookie_Title">{t.cookies.title}</h2>
+                        {currentLocale === "en" ? (
                             <>
-                                <h1 className="Cookie_Title">Cookies</h1>
                                 <p className="Cookie_Text">This website uses cookies to ensure that you get the best experience.</p>
                                 <p className="Cookie_Text">
-                                    By continuing to use this site, you agree to our <Link href="/privacidade">privacy policy</Link> and with our{" "}
+                                    By continuing to use this site, you agree to our <Link href="/privacidade">privacy policy</Link> and our{" "}
                                     <Link href="/termos-de-uso">terms of use</Link>.
                                 </p>
                             </>
-                        )}
-
-                        {currentLocale === "pt-BR" && (
+                        ) : (
                             <>
-                                <h1 className="Cookie_Title">Cookies</h1>
                                 <p className="Cookie_Text">Nós usamos cookies para melhorar a sua experiência no nosso site.</p>
                                 <p className="Cookie_Text">
                                     Ao continuar a navegar, você concorda com a nossa <Link href="/privacidade">política de privacidade</Link> e com
@@ -46,15 +63,24 @@ export default function Cookies() {
                                 </p>
                             </>
                         )}
-                        <button
-                            className="Cookie_Btn"
-                            onClick={() => {
-                                setCookie(true);
-                                localStorage.setItem("cookie", "true");
-                            }}
-                        >
-                            {t.cookies.btnText}
-                        </button>
+                        <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap", marginTop: "0.5rem" }}>
+                            <button
+                                className="Cookie_Btn"
+                                onClick={handleAcceptAll}
+                            >
+                                {t.cookies.acceptAllBtnText || t.cookies.btnText}
+                            </button>
+                            <button
+                                className="Cookie_Btn"
+                                onClick={handleEssentialOnly}
+                                style={{
+                                    backgroundColor: "transparent",
+                                    border: "1px solid var(--text-color)",
+                                }}
+                            >
+                                {t.cookies.essentialOnlyBtnText || (currentLocale === "en" ? "Necessary Only" : "Apenas Necessários")}
+                            </button>
+                        </div>
                     </div>
                 </m.div>
             )}

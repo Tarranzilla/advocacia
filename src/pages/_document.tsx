@@ -1,8 +1,9 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript, DocumentProps } from "next/document";
 
-export default function Document() {
+export default function Document(props: DocumentProps) {
+    const locale = props.__NEXT_DATA__?.locale || "pt-BR";
     return (
-        <Html lang="pt-BR">
+        <Html lang={locale}>
             <Head>
                 <link rel="icon" href="/favicon.png" />
                 <link rel="manifest" href="/manifest.json" />

@@ -7,9 +7,7 @@ import expertiseList_EN from "@/content_lists/english/expertise_list_en";
 
 import { useSimpleTranslation } from "@/international/useSimpleTranslation";
 
-import { GetStaticPathsContext } from "next";
-
-import { motion as m, AnimatePresence } from "framer-motion";
+import { motion as m } from "framer-motion";
 
 import { Expertise } from "@/types/Expertise";
 
@@ -33,30 +31,12 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params, locale }: { params: { expertiseKey: string }; locale: string }) {
-    console.log(`getStaticProps called for locale: ${locale}, expertiseKey: ${params.expertiseKey}`);
-
-    // Log the params and locale
-    console.log("params:", params);
-    console.log("locale:", locale);
-
-    // Get the data for this page based on params
-    const expertiseKey = params.expertiseKey;
+    const expertiseKey = params?.expertiseKey;
     const list = locale === "pt-BR" ? expertiseList : expertiseList_EN;
-    console.log("expertiseKey:", expertiseKey);
 
-    //tests
-
-    // Log the expertise lists
-    console.log("expertiseList:", expertiseList);
-    console.log("expertiseList_EN:", expertiseList_EN);
-
-    const expertise = list.find((expertise) => expertise.key === expertiseKey);
-
-    // Log the expertise
-    console.log("expertise:", expertise);
+    const expertise = list.find((item) => item.key === expertiseKey);
 
     if (!expertise) {
-        console.log("expertise not found");
         return {
             notFound: true,
         };
@@ -78,7 +58,6 @@ export default function ExpertiseDetail({ expertise }: { expertise: Expertise })
         return <div>Loading...</div>;
     }
 
-    console.log("expertise client:", expertise);
     const message = "Olá, eu gostaria de agendar uma consulta relacionada a " + expertise.title + ".";
 
     function toUrlValidString(str: string) {
@@ -92,7 +71,7 @@ export default function ExpertiseDetail({ expertise }: { expertise: Expertise })
                 <title>{"Stresser & Machado | " + expertise.title}</title>
                 <meta name="description" content={expertise.metadescription} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.png" />
             </Head>
             <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} key={expertise.key}>
                 <main className="Page_Wrapper Expertise_Page_Wrapper">
