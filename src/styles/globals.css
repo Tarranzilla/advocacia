@@ -149,7 +149,7 @@ body.body-no-scroll {
     border-radius: var(--border-radius);
     background-color: var(--text-color);
     color: var(--bg-color);
-    max-width: 360px;
+    max-width: 440px;
     width: 100%;
 }
 
@@ -186,8 +186,23 @@ body.body-no-scroll {
 .Cookie_Btn:focus-within,
 .Cookie_Btn:hover {
     background-color: white;
-    font-size: 1.1rem;
-    scale: 1.05;
+    color: var(--bg-color);
+    font-size: 1.05rem;
+    scale: 1.03;
+}
+
+.Cookie_Btn_Secondary {
+    background-color: transparent;
+    color: var(--bg-color);
+    border: 2px solid var(--bg-color);
+    font-weight: 600;
+}
+
+.Cookie_Btn_Secondary:focus-within,
+.Cookie_Btn_Secondary:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-color: var(--bg-color);
 }
 
 .terms-of-use,

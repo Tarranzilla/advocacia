@@ -67,16 +67,14 @@ export default function Cookies() {
                             <button
                                 className="Cookie_Btn"
                                 onClick={handleAcceptAll}
+                                style={{ flex: 1, minWidth: "140px" }}
                             >
                                 {t.cookies.acceptAllBtnText || t.cookies.btnText}
                             </button>
                             <button
-                                className="Cookie_Btn"
+                                className="Cookie_Btn Cookie_Btn_Secondary"
                                 onClick={handleEssentialOnly}
-                                style={{
-                                    backgroundColor: "transparent",
-                                    border: "1px solid var(--text-color)",
-                                }}
+                                style={{ flex: 1, minWidth: "140px" }}
                             >
                                 {t.cookies.essentialOnlyBtnText || (currentLocale === "en" ? "Necessary Only" : "Apenas Necessários")}
                             </button>
