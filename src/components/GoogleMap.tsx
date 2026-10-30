@@ -1,50 +1,19 @@
-import React, { useEffect, useRef } from "react";
-import { Loader } from "@googlemaps/js-api-loader";
+import React from "react";
 
 const MapComponent = () => {
-    const mapRef = useRef<HTMLDivElement | null>(null);
-    const address = "Avenida Manoel Ribas, nº 507 - Sala 05 - Mercês Curitiba - PR 80510-346 Brasil";
-
-    useEffect(() => {
-        const loader = new Loader({
-            apiKey: "AIzaSyBoWxQtCEHcm-AqgB3fjGveoXqVgy8g9pI",
-            version: "weekly",
-            libraries: ["places"],
-        });
-
-        loader.load().then(() => {
-            if (mapRef.current) {
-                const map = new google.maps.Map(mapRef.current, {
-                    zoom: 15,
-                });
-
-                const geocoder = new google.maps.Geocoder();
-
-                geocoder.geocode({ address: address }, (results, status) => {
-                    if (status === "OK") {
-                        if (results) {
-                            map.setCenter(results[0].geometry.location);
-                            new google.maps.Marker({
-                                map: map,
-                                position: results[0].geometry.location,
-                            });
-                        } else {
-                            alert("Geocode was successful but no results were returned.");
-                        }
-                    } else {
-                        alert("Geocode was not successful for the following reason: " + status);
-                    }
-                });
-            }
-        });
-    }, [address]);
+    const address = "Avenida Manoel Ribas, nº 507 - Sala 05 - Mercês, Curitiba - PR, 80510-346, Brasil";
+    const encodedAddress = encodeURIComponent(address);
+    const mapSrc = `https://maps.google.com/maps?q=${encodedAddress}&t=&z=16&ie=UTF8&iwloc=&output=embed`;
 
     return (
-        <div
+        <iframe
             title="Mapa de localização do escritório de advocacia Stresser & Machado"
-            ref={mapRef}
+            src={mapSrc}
             className="Map"
-            style={{ width: "100%", height: "400px" }}
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+            style={{ width: "100%", height: "400px", border: 0 }}
         />
     );
 };
