@@ -77,7 +77,7 @@ const englishWebStructure: WebStructure = {
     cookies: {
         title: "Cookies",
         paragraphs: [
-            "This website use cookies to guarantee that you get the best experience.",
+            "This website uses cookies to ensure that you get the best experience.",
             "By continuing to use this site, you agree to the use of cookies.",
         ],
         btnText: "Understood",
@@ -138,7 +138,7 @@ const englishWebStructure: WebStructure = {
                 },
 
                 functioningHours: {
-                    title: "Functioning Hours",
+                    title: "Business Hours",
                     schedule: "Monday to Friday: 09:00 - 12:00 | 13:00 - 18:00",
                 },
 
@@ -166,7 +166,7 @@ const englishWebStructure: WebStructure = {
             label: "Change to Portuguese",
             availableLangs: ["en", "pt-BR"],
         },
-        copyRight: "© 2024 Stresser & Machado",
+        copyRight: "© 2026 Stresser & Machado",
 
         scheduleBtn: {
             title: "Schedule an Appointment",

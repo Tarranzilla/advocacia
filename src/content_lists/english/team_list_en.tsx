@@ -12,9 +12,9 @@ const teamList_EN: TeamMember[] = [
         email: "telma@stresseremachado.adv.br",
 
         description: [
-            "Post-graduated in Tax Law and Tax Procedure by UNICURITIBA in 2013. Works in administrative and judicial tax advocacy. Member of the Taxpayers and Fiscal Resources Council/PR, representing FIEP/PR.",
+            "Master's degree in Business Law and Citizenship from UNICURITIBA. Has her own office in Curitiba/PR, working in the areas of Successions, Tax, Real Estate, Family, Consumer, Labor, Social Security, and Banking Law.",
+            "Postgraduate in Tax Law and Tax Procedure from UNICURITIBA in 2013. Works in administrative and judicial tax litigation. Member of the Taxpayers and Fiscal Resources Council/PR, representing FIEP/PR.",
             "Currently, works as an attorney at the Taxpayers and Fiscal Resources Council (CCRF), acting in oral advocacy and defense of Taxpayers in the state of Paraná.",
-            "Master's degree in Business Law and Citizenship at UNIVERSIDADE UNICURITIBA. Has her own office in Curitiba/PR, working in the areas of Successions, Tax, Real Estate, Family, Consumer, Labor, Social Security, and Banking Law.",
         ],
 
         academicBackground: [
@@ -57,14 +57,24 @@ const teamList_EN: TeamMember[] = [
         OAB_Link: "https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=46290&tpinsc=A",
         cellphone: "(41) 9.9915-5252",
         telephone: "(41) 3668-8000",
-        email: "fran@stressermachado.adv.br",
+        email: "fran@stresseremachado.adv.br",
 
         description: [
-            "Graduated in Law from the Pontifical Catholic University of Paraná (2007), with specialization in Public Law with emphasis on Constitutional Law by the renowned jurist Damásio de Jesus.",
+            "Specialized in Public Law with emphasis on Constitutional Law from Damásio de Jesus (2008), and graduated in Law from the Pontifical Catholic University of Paraná (2007). Attended the Labor and Social Security Law Course by the Association of Labor Judges of Paraná (2015/2016), as well as the Civil Procedure Course at the Romeu Felipe Bacellar Institute (2018/2019).",
             "Practicing lawyer in the areas of Labor Law, Family Law, and Social Security Law.",
         ],
 
         academicBackground: [
+            {
+                course: "Specialization in Public Law",
+                date: "2007-2008",
+                institution: "São Domingos Institute",
+            },
+            {
+                course: "Bachelor's Degree in Law",
+                date: "2002-2007",
+                institution: "Pontifical Catholic University of Paraná",
+            },
             {
                 course: "Civil Procedure Course",
                 date: "2018-2019",
@@ -84,16 +94,6 @@ const teamList_EN: TeamMember[] = [
                 course: "General Notions of Social Security Law",
                 date: "2008",
                 institution: "Legal Course - University Extension of Paraná",
-            },
-            {
-                course: "Specialization in Public Law",
-                date: "2007-2008",
-                institution: "São Domingos Institute",
-            },
-            {
-                course: "Bachelor's Degree in Law",
-                date: "2002-2007",
-                institution: "Pontifical Catholic University of Paraná",
             },
         ],
     },

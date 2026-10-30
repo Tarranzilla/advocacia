@@ -28,7 +28,7 @@ export default function Cookies() {
                         {currentLocale === "en" && (
                             <>
                                 <h1 className="Cookie_Title">Cookies</h1>
-                                <p className="Cookie_Text">This website use cookies to guarantee that you get the best experience.</p>
+                                <p className="Cookie_Text">This website uses cookies to ensure that you get the best experience.</p>
                                 <p className="Cookie_Text">
                                     By continuing to use this site, you agree to our <Link href="/privacidade">privacy policy</Link> and with our{" "}
                                     <Link href="/termos-de-uso">terms of use</Link>.

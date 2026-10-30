@@ -6,9 +6,9 @@ export default function ContatoRecebido() {
             <main className="Page_Wrapper Centralized_Page_Wrapper">
                 <div className="Recieved_Contact_Container">
                     <h1>Contato Recebido</h1>
-                    <p>Obrigado por entrar em contato! Logo iremos lhe responder.</p>
+                    <p>Agradecemos o seu contato! Em breve retornaremos a sua mensagem.</p>
 
-                    <p> Caso haja alguma dúvida sinta-se a vontade para nos informar através de nossos canais de atendimento.</p>
+                    <p>Caso haja alguma dúvida, sinta-se à vontade para nos contatar por meio de nossos canais de atendimento.</p>
                 </div>
 
                 <Link className="Recieved_Contact_Button" href="/">

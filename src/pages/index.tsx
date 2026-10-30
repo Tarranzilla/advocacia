@@ -169,7 +169,7 @@ export default function Home() {
 
                                 <div className="Working_Hours Contact_Layout_Item" key={"contato_email"}>
                                     <h3 className="Contact_Layout_Item_Title">Email</h3>
-                                    <p>fran@stressermachado.adv.br</p>
+                                    <p>fran@stresseremachado.adv.br</p>
                                     <p>telma@stresseremachado.adv.br</p>
                                     <p>assessora@stresseremachado.adv.br</p>
                                 </div>

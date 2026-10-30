@@ -12,14 +12,14 @@ const teamList: TeamMember[] = [
         email: "telma@stresseremachado.adv.br",
 
         description: [
+            "Mestra em Direito Empresarial e Cidadania pelo Centro Universitário Curitiba (UNICURITIBA). Possui escritório próprio em Curitiba/PR, atuando nas áreas de Inventário, Tributário, Imobiliário, Família, Consumidor, Trabalho, Previdenciário e Bancário.",
             "Pós-graduada em Direito e Processo Tributário pela UNICURITIBA em 2013. Atua na advocacia tributária administrativa e judicial. Membro do Conselho de Contribuintes e Recursos Fiscais/PR, representando a FIEP/PR.",
             "Atualmente, advoga no Conselho de Contribuintes e Recursos Fiscais (CCRF), atuando em sustentação oral e defesas de Contribuintes do Estado do Paraná.",
-            "Mestra em Direito Empresarial e Cidadania na UNIVERSIDADE UNICURITIBA. Possui escritório próprio em Curitiba/PR, atuando nas áreas de Inventário, Tributário, Imobiliário, Família, Consumidor, Trabalho, Previdenciário e Bancário.",
         ],
 
         academicBackground: [
             {
-                course: "Mestado em Direito Empresarial e Cidadania",
+                course: "Mestrado em Direito Empresarial e Cidadania",
                 date: "2017-2019",
                 institution: "Universidade Unicuritiba",
             },
@@ -57,14 +57,24 @@ const teamList: TeamMember[] = [
         OAB_Link: "https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=46290&tpinsc=A",
         cellphone: "(41) 9.9915-5252",
         telephone: "(41) 3668-8000",
-        email: "fran@stressermachado.adv.br",
+        email: "fran@stresseremachado.adv.br",
 
         description: [
-            "Possui graduação em Direito pela Pontifícia Universidade Católica do Paraná (2007) e especialização em Direito Público com ênfase em Direito Constitucional pela Instituição do renomado jurista Damásio de Jesus (2008) e foi aluna do Curso em direito do Trabalho e Previdenciário pela Associação dos Magistrados do Trabalho do Paraná (2015/2016), bem como, do Curso em Processo Civil do Instituto Romeu Felipe Bacellar (2018/2019).",
+            "Especialista em Direito Público com ênfase em Direito Constitucional pela Faculdade Damásio de Jesus (2008) e graduada em Direito pela Pontifícia Universidade Católica do Paraná (2007). Foi aluna do Curso em Direito do Trabalho e Previdenciário pela Associação dos Magistrados do Trabalho do Paraná (2015/2016), bem como do Curso em Processo Civil do Instituto Romeu Felipe Bacellar (2018/2019).",
             "Advogada atuante nas áreas do Direito do Trabalho, Previdenciário, Tributário, Cível e Família.",
         ],
 
         academicBackground: [
+            {
+                course: "Especialização em Direito Público",
+                date: "2007-2008",
+                institution: "Instituto São Domingos",
+            },
+            {
+                course: "Graduação em Direito",
+                date: "2002-2007",
+                institution: "Pontifícia Universidade Católica do Paraná",
+            },
             {
                 course: "Curso em Processo Civil",
                 date: "2018-2019",
@@ -78,22 +88,12 @@ const teamList: TeamMember[] = [
             {
                 course: "Cálculos Trabalhistas",
                 date: "2009",
-                institution: "Escola Superior da Advocacia- OAB/PR",
+                institution: "Escola Superior de Advocacia - OAB/PR",
             },
             {
                 course: "Noções Gerais de Direito Previdenciário",
                 date: "2008",
                 institution: "Curso Jurídico - Extensão Universitária do Paraná",
-            },
-            {
-                course: "Especialização em Direito Público",
-                date: "2007-2008",
-                institution: "Instituto São Domingos",
-            },
-            {
-                course: "Graduação em Direito",
-                date: "2002-2007",
-                institution: "Pontifícia Universidade Católica do Paraná",
             },
         ],
     },

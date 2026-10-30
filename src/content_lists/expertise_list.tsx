@@ -209,7 +209,7 @@ export const expertiseList: Expertise[] = [
                 description: "Divisão dos bens adquiridos durante o casamento ou união estável em caso de separação ou divórcio.",
             },
             {
-                key: "adoção",
+                key: "adocao",
                 title: "Adoção",
                 description:
                     "Processo legal pelo qual uma pessoa ou um casal assume legalmente a responsabilidade de cuidar e educar uma criança como seu(s) filho(s).",
@@ -392,7 +392,7 @@ export const expertiseList: Expertise[] = [
             {
                 key: "direito_do_consumidor",
                 title: "Direito do Consumidor",
-                description: "Defesa dos interesses do consumidor perante instituições bancárias, fraudes, abusos contratuais e etc.",
+                description: "Defesa dos interesses do consumidor perante instituições bancárias contra fraudes, abusos contratuais, entre outros.",
             },
             {
                 key: "contratos_bancarios",

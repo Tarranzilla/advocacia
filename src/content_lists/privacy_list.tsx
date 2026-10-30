@@ -4,7 +4,7 @@ const privacyList: ParagraphsWithTitle[] = [
     {
         title: "Política de Privacidade",
         paragraphs: [
-            "Esta Política de Privacidade descreve como o escritório de advocacia Stresser e Machado (nós, nosso ou nos) coleta, usa e compartilha informações pessoais quando você usa nosso site www.stresseremachado.adv.br.",
+            "Esta Política de Privacidade descreve como o escritório de advocacia Stresser & Machado (referido como \"nós\", \"nosso\" ou \"escritório\") coleta, usa e compartilha informações pessoais quando você usa nosso site www.stresseremachado.adv.br.",
         ],
     },
     {
@@ -34,7 +34,7 @@ const privacyList: ParagraphsWithTitle[] = [
     {
         title: "Seus Direitos",
         paragraphs: [
-            "Você tem o direito de acessar, corrigir e excluir suas informações pessoais mantidas por nós. Se você deseja exercer esses direitos ou tiver alguma dúvida ou preocupação sobre nossa Política de Privacidade, entre em contato conosco através dos mecanismos fornecidos em nosso site.",
+            "Você tem o direito de acessar, corrigir e excluir suas informações pessoais mantidas por nós, nos termos da Lei Geral de Proteção de Dados (LGPD). Se você desejar exercer esses direitos ou tiver alguma dúvida ou preocupação sobre nossa Política de Privacidade, entre em contato conosco através dos mecanismos fornecidos em nosso site.",
         ],
     },
     {

@@ -12,7 +12,7 @@ const portugueseWebStructure: WebStructure = {
         returnToAreasOfExpertise: "Áreas de Atuação",
         customTitle: "Stresser & Machado | Advocacia e Consultoria",
         customDescription:
-            "Escritório de Advocacia em Curitiba liderado por duas advogadas experientes, com vinte anos de atuação no mercado e sólida formação acadêmica. Oferecemos uma ampla gama de serviços jurídicos, incluindo direito civil, criminal, trabalhista, administrativo e tributário, com compromisso de fornecer orientação jurídica confiável e personalizada para atender às necessidades individuais de nossos clientes.",
+            "Escritório de Advocacia em Curitiba liderado por duas advogadas experientes, com vinte anos de atuação no mercado e sólida formação acadêmica. Oferecemos uma ampla gama de serviços jurídicos, incluindo direito civil, criminal, trabalhista, administrativo e tributário, com o compromisso de fornecer orientação jurídica confiável e personalizada para atender às necessidades individuais de nossos clientes.",
         customWebsiteURL: "https://www.stresseremachado.adv.br",
         noSearchResultsFound: "Nenhum item corresponde à sua busca.",
     },
@@ -106,8 +106,8 @@ const portugueseWebStructure: WebStructure = {
                 key: "quem-somos",
                 title: "Quem Somos",
                 paragraphs: [
-                    "O escritório de advocacia Stresser e Machado é reconhecido pela liderança exemplar de duas advogadas de destaque na área. Com uma sólida experiência adquirida no serviço público e privado, elas trazem consigo um profundo entendimento das nuances legais e dos meandros do sistema jurídico. Ao longo de seus vinte anos de atuação no mercado e formação acadêmica.",
-                    "Nosso escritório oferece uma ampla gama de serviços jurídicos, cobrindo áreas como direito trabalhista, previdenciário, tributário, civil e da família. Estamos comprometidos em fornecer orientação jurídica confiável e de alta qualidade para atender às diversas necessidades de nossos clientes.",
+                    "O escritório de advocacia Stresser e Machado é reconhecido pela liderança exemplar de duas advogadas de destaque na área. Com uma sólida experiência adquirida no serviço público e privado, elas trazem consigo um profundo entendimento das nuances legais e dos meandros do sistema jurídico. Ao longo de seus vinte anos de atuação no mercado e sólida formação acadêmica, consolidaram-se como referências no setor jurídico.",
+                    "Nosso escritório oferece uma ampla gama de serviços jurídicos, cobrindo áreas como direito trabalhista, previdenciário, tributário, civil e de família. Estamos comprometidos em fornecer orientação jurídica confiável e de alta qualidade para atender às diversas necessidades de nossos clientes.",
                     "Além disso, a abordagem personalizada adotada pelo escritório Stresser e Machado é um diferencial marcante. Compreendemos que cada caso é único e merece atenção individualizada. Assim, trabalhamos em estreita colaboração com nossos clientes, desenvolvendo estratégias jurídicas sob medida para alcançar os melhores resultados possíveis.",
                     "Nosso compromisso com a excelência e a integridade é essencial em cada aspecto de nosso trabalho. Não apenas defendemos os interesses de nossos clientes de forma vigorosa, mas também o fazemos dentro dos mais altos padrões éticos. Isso garante não apenas resultados satisfatórios, mas também a confiança e a satisfação duradouras daqueles que confiam em nossos serviços.",
                 ],
@@ -144,7 +144,7 @@ const portugueseWebStructure: WebStructure = {
                 adress: {
                     key: "endereco",
                     title: "Endereço",
-                    adress: "Avenida Manoel Ribas, nº 507 - Sala 05 - Mercês Curitiba - PR 80510-346 Brasil",
+                    adress: "Avenida Manoel Ribas, nº 507 - Sala 05 - Mercês, Curitiba - PR, 80510-346, Brasil",
                 },
             },
         },
@@ -165,7 +165,7 @@ const portugueseWebStructure: WebStructure = {
             label: "Mudar para Inglês",
             availableLangs: ["en", "pt-BR"],
         },
-        copyRight: "© 2024 Stresser & Machado",
+        copyRight: "© 2026 Stresser & Machado",
 
         scheduleBtn: {
             title: "Agende uma Consulta",

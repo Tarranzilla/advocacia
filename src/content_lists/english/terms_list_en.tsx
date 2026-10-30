@@ -4,7 +4,7 @@ const termsList_EN: ParagraphsWithTitle[] = [
     {
         title: "Terms of Use",
         paragraphs: [
-            "These Terms of Use govern the use of the Stresser e Machado law firm's website (we, our, or us). By accessing and using our website www.stresseremachado.adv.br, you agree to these terms and conditions.",
+            "These Terms of Use govern the use of the Stresser & Machado law firm's website (referred to as \"we\", \"our\", or \"the firm\"). By accessing and using our website www.stresseremachado.adv.br, you agree to these terms and conditions.",
         ],
     },
     {
@@ -34,7 +34,7 @@ const termsList_EN: ParagraphsWithTitle[] = [
     {
         title: "Applicable Law",
         paragraphs: [
-            "These Terms of Use shall be governed and construed in accordance with the laws of [insert country or state], without regard to its conflict of law provisions.",
+            "These Terms of Use shall be governed and construed in accordance with the laws of the Federative Republic of Brazil, with the courts of the Judicial District of Curitiba, State of Paraná, having exclusive jurisdiction to resolve any disputes arising from this document.",
         ],
     },
 ];

@@ -40,7 +40,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <p className="Desktop_Only">© 2024 Stresser & Machado</p>
+                <p className="Desktop_Only">{t.footer.copyRight}</p>
 
                 <div className="Footer_Actions">
                     <div className="Footer_Btn Quote_Btn" title={t.footer.scheduleBtn.label}>

@@ -4,13 +4,13 @@ const privacyList_EN: ParagraphsWithTitle[] = [
     {
         title: "Privacy Policy",
         paragraphs: [
-            "This Privacy Policy describes how the Stresser e Machado law firm (we, our, or us) collects, uses, and shares personal information when you use our website www.stresseremachado.adv.br.",
+            "This Privacy Policy describes how the Stresser & Machado law firm (referred to as \"we\", \"our\", or \"the firm\") collects, uses, and shares personal information when you use our website www.stresseremachado.adv.br.",
         ],
     },
     {
         title: "Information We Collect",
         paragraphs: [
-            "When you visit our website, we may automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. Additionally, as you browse the site, we may collect information about the individual web pages or products that you view, what websites or search terms referred you to the site, and information about how you interact with the site.",
+            "When you visit our website, we may automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. Additionally, as you browse the site, we may collect information about the individual web pages or legal services that you view, what websites or search terms referred you to the site, and information about how you interact with the site.",
         ],
     },
     {

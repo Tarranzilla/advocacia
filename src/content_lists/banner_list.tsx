@@ -16,7 +16,7 @@ const bannerList: Banner[] = [
         key: "banner2",
         title: "Assessoria Especializada em Benefícios do INSS",
         service: "aposentadoria e benefícios do INSS.",
-        subtitle: "Obtenha orientação profissional para garantir seus direitos previdenciários. Conte com nossa experiência!.",
+        subtitle: "Obtenha orientação profissional para garantir seus direitos previdenciários. Conte com nossa experiência!",
         imgSrc: "/banner_imgs/banner_inss_001.png",
         size: {
             width: 740,

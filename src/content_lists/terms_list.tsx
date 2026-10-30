@@ -4,7 +4,7 @@ const termsList: ParagraphsWithTitle[] = [
     {
         title: "Termos de Uso",
         paragraphs: [
-            "Estes Termos de Uso regem o uso do site do escritório de advocacia Stresser e Machado (nós, nosso ou nos). Ao acessar e usar nosso site www.stresseremachado.adv.br, você concorda com estes termos e condições.",
+            "Estes Termos de Uso regem o uso do site do escritório de advocacia Stresser & Machado (referido como \"nós\", \"nosso\" ou \"escritório\"). Ao acessar e usar nosso site www.stresseremachado.adv.br, você concorda com estes termos e condições.",
         ],
     },
     {
@@ -28,13 +28,13 @@ const termsList: ParagraphsWithTitle[] = [
     {
         title: "Alterações nos Termos de Uso",
         paragraphs: [
-            "Reservamos o direito de modificar estes Termos de Uso a qualquer momento, sem aviso prévio. O uso continuado do site após a publicação de quaisquer modificações constituirá sua aceitação dessas modificações.",
+            "Reservamo-nos o direito de modificar estes Termos de Uso a qualquer momento, sem aviso prévio. O uso continuado do site após a publicação de quaisquer modificações constituirá sua aceitação dessas modificações.",
         ],
     },
     {
         title: "Lei Aplicável",
         paragraphs: [
-            "Estes Termos de Uso serão regidos e interpretados de acordo com as leis do [inserir país ou estado], sem considerar suas disposições de conflito de leis.",
+            "Estes Termos de Uso serão regidos e interpretados de acordo com as leis da República Federativa do Brasil, elegendo-se o Foro da Comarca de Curitiba, Estado do Paraná, para dirimir quaisquer controvérsias decorrentes deste documento, com expressa renúncia a qualquer outro, por mais privilegiado que seja.",
         ],
     },
 ];

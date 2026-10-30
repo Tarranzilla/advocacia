@@ -206,7 +206,7 @@ export const expertiseList_EN: Expertise[] = [
                 description: "Division of assets acquired during marriage or common-law union in case of separation or divorce.",
             },
             {
-                key: "adoção",
+                key: "adocao",
                 title: "Adoption",
                 description:
                     "Legal process by which an individual or a couple legally assumes the responsibility of caring for and raising a child as their own.",

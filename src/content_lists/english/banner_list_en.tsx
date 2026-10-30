@@ -14,7 +14,7 @@ const bannerList_EN: Banner[] = [
     },
     {
         key: "banner2",
-        title: "specialized assistance in INSS benefits.",
+        title: "Specialized Assistance in INSS Benefits",
         service: "Social Security",
         subtitle: "Get professional guidance to ensure your social security rights. Count on our experience!",
         imgSrc: "/banner_imgs/banner_inss_001.png",
